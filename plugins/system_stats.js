@@ -32,15 +32,6 @@ if (Config.WORKTYPE == 'private') {
             { mimetype: Mimetype.gif, caption: "WRITE ALIVE MESSAGE HERE WRITE ALIVE MESSAGE HERE" }
         )
     }
-}));
-
-    Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
-
-        const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
-        await message.sendMessage(
-            '```' + child + '```', MessageType.text
-        );
-    }));
 }
 else if (Config.WORKTYPE == 'public') {
 
