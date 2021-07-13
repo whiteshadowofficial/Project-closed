@@ -1,5 +1,5 @@
 <div align="center">
-<a href="#"><img title="Alpha bot" src="https://img.shields.io/badge/Alpha bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="Alpha botV2" src="https://img.shields.io/badge/Alpha botV2-red?colorA=%24#FF0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -76,7 +76,7 @@ Click WA logo to join our official group 👇
 
 [![Run on Repl.it](https://repl.it/badge/github/phaticusthiccy/WhatsAsenaDuplicated)](https://repl.it/@phaticusthiccy/WhatsAsena-QR)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sreezz-ai/AlphaBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sreezz-ai/AlphaBotV2)
 
 ##
 
