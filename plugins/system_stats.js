@@ -38,7 +38,7 @@ else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
     
-    if (Config.ALIVEMSG == 'asena') {
+    if (Config.ALIVEMSG == 'default') {
 
         await message.client.sendMessage(
             message.jid, 
