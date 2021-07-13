@@ -29,7 +29,7 @@ if (Config.WORKTYPE == 'private') {
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/VID-20210209-WA0058.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.gif, caption: "WRITE ALIVE MESSAGE HERE WRITE ALIVE MESSAGE HERE" }
+            { mimetype: Mimetype.gif, caption: "*▬🐺> ★ ᴀʟᴘͥʜͭᴀᷤ ʙͫᴏͤᴛ ★ < 🐺▬*\n```🔰ᵖᵒʷᵉʳᵈ ᵇʸ ʷʰᵃᵗˢᴬˢᵉⁿᵃⁿᵃ🔰```\n\n➢   *Hosted  •~* ```Heroku ✓```\n➢   *Version •~* ```v3.2 Beta ✓```\n➢   *Branch •~* ```Master ✓```\n>\n```https://chat.whatsapp.com/DQmOkafYuZGFDBWVcGB0Gw```\n**\n```Copyright All rights reserverd```" }
         )
     }
 }
@@ -44,7 +44,7 @@ else if (Config.WORKTYPE == 'public') {
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/VID-20210209-WA0058.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.gif, caption: "WRITE ALIVE MESSAGE HERE WRITE ALIVE MESSAGE HERE " }
+            { mimetype: Mimetype.gif, caption: "*▬🐺> ★ ᴀʟᴘͥʜͭᴀᷤ ʙͫᴏͤᴛ ★ < 🐺▬*\n```🔰ᵖᵒʷᵉʳᵈ ᵇʸ ʷʰᵃᵗˢᴬˢᵉⁿᵃⁿᵃ🔰```\n\n➢   *Hosted  •~* ```Heroku ✓```\n➢   *Version •~* ```v3.2 Beta ✓```\n➢   *Branch •~* ```Master ✓```\n>\n```https://chat.whatsapp.com/DQmOkafYuZGFDBWVcGB0Gw```\n**\n```Copyright All rights reserverd``` " }
         )
     }
 }));
