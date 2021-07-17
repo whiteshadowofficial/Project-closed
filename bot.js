@@ -559,7 +559,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
                await message.client.sendMessage(message.jid, 'gb.message ' + '@' + message.reply_message.jid.split('@')[0] + '’Welcome... ❤', MessageType.text, {
-                    quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}});            
+                    quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]} });            
             }
             return;
         }
