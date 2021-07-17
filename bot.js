@@ -553,7 +553,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                 let pp
                 try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
                 await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); 
+                await new Promise(r => setTimeout(r, 1000));
+
+                await message.client.sendMessage(message.jid, '```Hi``` ' + '@' + message.reply_message.jid.split('@')[0] + '’Welcome... ❤', MessageType.text, {
+                    quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]} });  
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
@@ -563,7 +567,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                let pp
                 try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
                 await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message });
+                await new Promise(r => setTimeout(r, 1000));
+
+                await message.client.sendMessage(message.jid, '```Hi``` ' + '@' + message.reply_message.jid.split('@')[0] + '’Welcome... ❤', MessageType.text, {
+                    quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}});            
             }
             return;
         }
