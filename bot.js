@@ -550,6 +550,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             // Görüşürüz Mesajı
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
+                await message.client.sendMessage(message.jid, '```Calculating``` ' + '@' + message.reply_message.jid.split('@')[0] + '’s ```Lesbian Meter.. 🌈```', MessageType.text, {
+                    quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
                 let pp
                 try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
                 await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
