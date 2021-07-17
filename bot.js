@@ -550,13 +550,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             // Görüşürüz Mesajı
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
-                let pp
-                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); 
-                await new Promise(r => setTimeout(r, 1000));
-
-                await message.client.sendMessage(message.jid, '```Hi``` ' + '@' + message.reply_message.jid.split('@')[0] + '’Welcome... ❤', MessageType.text, {
+                await message.client.sendMessage(message.jid, 'gb.message ' + '@' + message.reply_message.jid.split('@')[0] + '’Welcome... ❤', MessageType.text, {
                     quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]} });  
             }
             return;
@@ -564,13 +558,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             // Hoşgeldin Mesajı
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
-               let pp
-                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message });
-                await new Promise(r => setTimeout(r, 1000));
-
-                await message.client.sendMessage(message.jid, '```Hi``` ' + '@' + message.reply_message.jid.split('@')[0] + '’Welcome... ❤', MessageType.text, {
+               await message.client.sendMessage(message.jid, 'gb.message ' + '@' + message.reply_message.jid.split('@')[0] + '’Welcome... ❤', MessageType.text, {
                     quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}});            
             }
             return;
