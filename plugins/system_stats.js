@@ -51,26 +51,21 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    
+Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
-        if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 Asena Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Telegram Group:* https://t.me/AsenaSupport\n*Telegram Channel:* https://t.me/asenaremaster\n*Plugin Channel:* ' + Config.CHANNEL, MessageType.text);
-        }
-        else {
-            const pow = '*Powered by WhatsAsena*'
-            const payload = Config.ALIVEMSG
-            const status = await message.client.getStatus()
-            const ppUrl = await message.client.getProfilePicture() 
-            const resim = await Axios.get(ppUrl, {responseType: 'arraybuffer'})
+    
+    if (Config.ALIVEMSG == 'default') {
 
-            if (!payload.includes('{pp}')) {
-                await message.client.sendMessage(message.jid,payload.replace('{version}', Config.VERSION).replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL) + '\n' + pow, MessageType.text);
-            }
-            else if (payload.includes('{pp}')) {
-                await message.sendMessage(Buffer(resim.data), MessageType.image, { caption: payload.replace('{version}', Config.VERSION).replace('{pp}', '').replace('{info}', `${status.status}`).replace('{plugin}', Config.CHANNEL) + '\n' + pow });
-            }
-        }
-    }));
+        await message.client.sendMessage(
+            message.jid, 
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/kyouko.mp4"),
+            MessageType.video, 
+            { mimetype: Mimetype.video, caption: "*💕 Kyouko 💕 : Hey there, I am alive.*" }
+        )
+    }
+}));
+
 
     Asena.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
