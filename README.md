@@ -88,8 +88,7 @@ This project is open source so all the codes are clear. Neither less nor more; y
 ### What about our security?
 If you are concerned about security, you can install it on your own computer. If you think someone else has captured your data, simply click on **Whatsapp> Three Dots> Whatsapp Web> Logout** from all sessions button.
 
-### Is it paid?
-**Of course not.** It will never happen. But you can donate to us.[Whatsapp](http://wa.me/+918921936055) 
+### 
 
 ##
 
