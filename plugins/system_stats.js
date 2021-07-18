@@ -53,17 +53,9 @@ else if (Config.WORKTYPE == 'public') {
 
     
 Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
-
-    
-    if (Config.ALIVEMSG == 'default') {
-
-        await message.client.sendMessage(
-            message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/kyouko.mp4"),
-            MessageType.video, 
-            { mimetype: Mimetype.video, caption: "*💕 Kyouko 💕 : Hey there, I am alive.*" }
-        )
-    }
+    await message.sendMessage(
+        '*💕 Kyouko 💕 : Hey there! I am alive.\n\n*Version:* ```'+Config.VERSION+'```' , MessageType.text
+    );
 }));
 
 
