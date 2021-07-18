@@ -14,19 +14,10 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('system_stats');
 
-
 Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
-
-    
-    if (Config.ALIVEMSG == 'default') {
-
-        await message.client.sendMessage(
-            message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/kyouko.mp4"),
-            MessageType.video, 
-            { mimetype: Mimetype.video, caption: "*💕 Kyouko 💕 : Hey there!!*" }
-        )
-    }
+    await message.sendMessage(
+        '```💕 Kyouko 💕```\n\n*Version:* ```'+Config.VERSION+'```' , MessageType.text
+    );
 }));
 
 Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
