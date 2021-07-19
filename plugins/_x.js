@@ -63,7 +63,7 @@ if (Config.WORKTYPE == 'private') {
                 }
             );
             await message.client.sendMessage(
-                message.jid,'▬▬▬ *💕 Kyouko 💕* ▬▬▬\n\n' + CMD_HELP, MessageType.text
+                message.jid,'▬▬▬ ```💕 Kyouko 💕``` ▬▬▬\n\n' + CMD_HELP, MessageType.text
             );    
         } else {
             var CMD_HELP = '';
@@ -116,7 +116,7 @@ if (Config.WORKTYPE == 'private') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'▬▬▬ *💕 Kyouko 💕* ▬▬▬\n\n' + CMD_HELP, MessageType.text
+                message.jid,'▬▬▬ ```💕 Kyouko 💕``` ▬▬▬\n\n' + CMD_HELP, MessageType.text
             );
         }
     }));
