@@ -75,10 +75,10 @@
             "MUST_TEXT": "```Please reply to any message```"
         },
         "heroku": {
-            "RESTART_DESC": "Restart 💕 Kyouko 💕",
-            "RESTART_MSG": "*💕 Kyouko 💕 : Restarting ...*",
-            "SHUTDOWN_DESC": "Shutdown 💕 Kyouko 💕",
-            "SHUTDOWN_MSG": "*💕 Kyouko 💕 : Shutting Down ⛔*",
+            "RESTART_DESC": "Restart bot",
+            "RESTART_MSG": "```⚡ Restarting...\n\n💕 Kyouko 💕```",
+            "SHUTDOWN_DESC": "Shutdown bot",
+            "SHUTDOWN_MSG": "```⚡ Shutting Down...\n\n💕 Kyouko 💕```",
             "DYNO_DESC": "Check heroku dyno usage",
             "DYNO_TOTAL": "```Total Quota```",
             "DYNO_USED": "```Quota used```",
@@ -136,13 +136,13 @@
         },
         "memes": {
             "MEMES_DESC": "Photo memes you replied to.",
-            "NEED_REPLY": "*💕 Kyouko 💕 : Reply to a photo!*",
-            "DOWNLOADING": "```Downloading media & making meme...```"
+            "NEED_REPLY": "```⚡ Reply to a photo!\n\n💕 Kyouko 💕```",
+            "DOWNLOADING": "```⚡ Downloading media & making meme...\n\n💕 Kyouko 💕```"
         },
         "ocr": {
             "OCR_DESC": "Reads the text on the photo you have replied.",
-            "NEED_REPLY": "*Reply to a photo!*",
-            "DOWNLOADING": "```Media is downloading & reading...```",
+            "NEED_REPLY": "```⚡ Reply to a photo!\n\n💕 Kyouko 💕```",
+            "DOWNLOADING": "```⚡ Media is downloading & reading...\n\n💕 Kyouko 💕```",
             "ERROR": "```I couldn't read this :/```\n*Error:*```{}```",
             "RESULT": "*Language:* ```{}```\n*Here is what I read:* ```{}```"
         },
@@ -165,45 +165,45 @@
         },
         "removebg": {
             "REMOVEBG_DESC": "Removes the background of the photos.",
-            "NEED_PHOTO": "*Give me a photo!*",
+            "NEED_PHOTO": "```⚡ Give me a photo!\n\n💕 Kyouko 💕```",
             "NO_API_KEY": "*You don't have an API key!*\nYou can get it here: remove.bg.",
-            "RBGING": "```Removing background...```"
+            "RBGING": "```⚡ Removing background...\n\n💕 Kyouko 💕```"
         },
         "scrapers": {
             "TRANSLATE_DESC": "It translates with Google Translate. You must reply any message.",
             "TRANSLATE_USAGE": ".trt tr it (From Turkish to Italian)",
-            "NEED_REPLY": "```Please reply to any message!```",
+            "NEED_REPLY": "```⚡ Please reply to any message!\n\n💕 Kyouko 💕```",
             "LANG": "Language",
             "FROM": "Translated Language",
             "RESULT": "Translate",
-            "TRANSLATE_ERROR": "❌ An error occured while translating!*",
+            "TRANSLATE_ERROR": "```❌ An error occured while translating!\n\n💕 Kyouko 💕```",
             "CURRENCY_ERROR": "```Syntax error! Example: .currency 1 TRY USD```",
             "INVALID_CURRENCY": "```Foreign currency transaction failed. You wrote wrong currency!```",
             "UNKNOWN_ERROR": "```An error occurred. Foreign currency transaction failed!```",
             "TTS_DESC": "It converts text to sound.",
             "TTS_ERROR": "```Error, Speech example of your sentence couldn't be made!```",
             "SONG_DESC": "Uploads the song you wrote.",
-            "NEED_TEXT_SONG": "*oru song name thado!*\n*Example:* ```.song eminem - rap god```",
-            "NO_RESULT": "*I couldn't find anything :(*",
-            "DOWNLOADING_SONG": "*💕 Kyouko 💕 : Downloading...*",
-            "UPLOADING_SONG": "*💕 Kyouko 💕 : Uploading...*",
+            "NEED_TEXT_SONG": "```⚡ Please write a song name!\nExample: .song alan walker - alone\n\n💕 Kyouko 💕```",
+            "NO_RESULT": "```⚡ I couldn't find anything :(\n\n💕 Kyouko 💕```",
+            "DOWNLOADING_SONG": "```[██████▒▒▒▒] 50%\n\n💕 Kyouko 💕```",
+            "UPLOADING_SONG": "```⚡ Uploading your song...\n\n💕 Kyouko 💕```",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
-            "DOWNLOADING_VIDEO": "*💕 Kyouko 💕 : Downloading...*",
-            "UPLOADING_VIDEO": "*💕 Kyouko 💕 : Uploading...*",
+            "DOWNLOADING_VIDEO": "```[██████▒▒▒▒] 50%\n\n💕 Kyouko 💕```",
+            "UPLOADING_VIDEO": "```⚡ Uploading your song...\n\n💕 Kyouko 💕```",
             "YT_DESC": "It searchs on YouTube.",
-            "NEED_WORDS": "*💕 Kyouko 💕 : Please write a few words!*",
-            "GETTING_VIDEOS": "*💕 Kyouko 💕 : I'm bringing videos...*",
-            "NOT_FOUND": "*💕 Kyouko 💕 : I couldn't find anything :(*",
-            "SEARCHING": "*💕 Kyouko 💕 : Searching...*",
+            "NEED_WORDS": "```⚡ Please write a few words!\n\n💕 Kyouko 💕```",
+            "GETTING_VIDEOS": "```⚡ I'm bringing videos...\n\n💕 Kyouko 💕```",
+            "NOT_FOUND": "```⚡ I couldn't find anything :(\n\n💕 Kyouko 💕```",
+            "SEARCHING": "```⚡ Searching...\n\n💕 Kyouko 💕```",
             "WIKI_DESC": "Searches query on Wikipedia.",
             "IMG_DESC": "Searches for related pics on Google.",
-            "IMG": "*💕 Kyouko 💕 : Uploading photo {} number {} ...*"
+            "IMG": "```⚡ Uploading photo {} number {} ...\n\n💕 Kyouko 💕```"
         },
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
-            "NEED_REPLY": "*💕 Kyouko 💕 : Reply to a photo or video!*",
-            "DOWNLOADING": "*💕 Kyouko 💕 : Converting...*"
+            "NEED_REPLY": "```⚡ Reply to a photo or video!\n\n💕 Kyouko 💕```",
+            "DOWNLOADING": "```⚡ Converting...\n\n💕 Kyouko 💕```"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
@@ -224,14 +224,14 @@
         },
         "updater": {
             "UPDATER_DESC": "Checks the update.",
-            "UPDATE": "*💕 Kyouko 💕 : completely up-to-date !*",
-            "NEW_UPDATE": "*New update available for Bot!*\n\nChanges:\n```",
+            "UPDATE": "```⚡ Completely up-to-date !\n\n💕 Kyouko 💕```",
+            "NEW_UPDATE": "```⚡ New update available for Bot!\n\nChanges:\n\n💕 Kyouko 💕```",
             "UPDATE_NOW_DESC": "It makes updates.",
-            "UPDATING": "*💕 Kyouko 💕 : Updating...*",
+            "UPDATING": "```⚡ Updating...\n\n💕 Kyouko 💕```",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
-            "UPDATED": "*💕 Kyouko 💕 : Successfully Updated!*",
-            "UPDATED_LOCAL": "*💕 Kyouko 💕 : Successfully Updated!*",
-            "AFTER_UPDATE": "*💕 Kyouko 💕 : Restarting...*",
+            "UPDATED": "```⚡ Successfully Updated!\n\n💕 Kyouko 💕```",
+            "UPDATED_LOCAL": "```⚡ Successfully Updated!\n\n💕 Kyouko 💕```",
+            "AFTER_UPDATE": "```⚡ Restarting...\n\n💕 Kyouko 💕```",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
