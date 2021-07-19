@@ -25,7 +25,7 @@ Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (asyn
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/kyouko3.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.video, caption: "```~ A L I V E ~\n\n 💕 Kyouko 💕```" }
+            { mimetype: Mimetype.video, caption: "```~ A L I V E ~\n\n💕 Kyouko 💕```" }
         )
     }
 }));
