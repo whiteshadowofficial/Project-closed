@@ -23,9 +23,9 @@ Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (asyn
 
         await message.client.sendMessage(
             message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/kyouko.mp4"),
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/kyouko3.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.video, caption: "*💕 Kyouko 💕 : Hey there! I am alive.*" }
+            { mimetype: Mimetype.video, caption: "```⚡ Hey! I am alive.\n\n💕 Kyouko 💕```" }
         )
     }
 }));
