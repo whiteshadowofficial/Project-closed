@@ -225,7 +225,7 @@
         "updater": {
             "UPDATER_DESC": "Checks the update.",
             "UPDATE": "```⚡ Completely up-to-date !\n\n💕 Kyouko 💕```",
-            "NEW_UPDATE": "```⚡ New update available for Bot!\n\nChanges:\n\n💕 Kyouko 💕```",
+            "NEW_UPDATE": "```⚡ New update available for 💕 Kyouko 💕!\n\nChanges:\n",
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "```⚡ Updating...\n\n💕 Kyouko 💕```",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
