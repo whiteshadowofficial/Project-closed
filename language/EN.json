@@ -219,7 +219,7 @@
             "UPDATE": "```YOUR BOT IS COMPLETELY UP-TO-DATE!``` \n\n 💕 *Kyouko* 💕",
             "NEW_UPDATE": "💕 *Kyouko* 💕 ```UPDATE AVAILABLE!```\n\n ```PLEASE ASK SUPPORT GROUP BEFORE UPDATING. OTHERWISE CHANCE TO GET ERROR!```\n\nChanges:\n```",
             "UPDATE_NOW_DESC": "It makes updates.",
-            "UPDATING": "```UPDATING... \n\n 💕 *Kyouko* 💕```",
+            "UPDATING": "```UPDATING...``` \n\n 💕 *Kyouko* 💕",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
             "UPDATED": "```UPDATED.``` \n\n 💕 *Kyouko* 💕",
             "UPDATED_LOCAL": "```SUCCESSFULLY UPDATED!``` \n\n 💕 *Kyouko* 💕",
