@@ -6,11 +6,11 @@ const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys'
 const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
-const need = "```TYPE SOME WORD AFTER COMMAND``` \n\n 💕 *Kyouko* 💕"
+const need = "```TYPE SOME WORD AFTER COMMAND!``` \n\n 💕 *Kyouko* 💕"
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 't3d ?(.*)', fromMe: true,dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'z3d ?(.*)', fromMe: true,dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
@@ -23,7 +23,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 't3d ?(.*)', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'z3d ?(.*)', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
