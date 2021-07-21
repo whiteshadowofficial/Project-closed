@@ -72,9 +72,9 @@
             "MUST_TEXT": "```Please reply to any message```"
         },
         "heroku": {
-            "RESTART_DESC": "Restart Kyouko x Alpha",
+            "RESTART_DESC": "Restart 💕 *Kyouko* 💕",
             "RESTART_MSG": "```RESTARTING...``` \n\n 💕 *Kyouko* 💕",
-            "SHUTDOWN_DESC": "Shutdown Kyouko x Alpha",
+            "SHUTDOWN_DESC": "Shutdown 💕 *Kyouko* 💕",
             "SHUTDOWN_MSG": "```SHUTTING DOWN...``` \n\n 💕 *Kyouko* 💕",
             "DYNO_DESC": "Check heroku dyno usage",
             "DYNO_TOTAL": "```Total Quota```",
@@ -141,7 +141,7 @@
             "SUC": "*Message Successfully Saved to LOG!*"
         },
         "ocr": {
-            "OCR_DESC": "```READS THE TEXT ON THE PHOTO YOU HAVE REPLIED.``` \n\n 💕 *Kyouko* 💕",
+            "OCR_DESC": "Reads the text on the photi you have replied.",
             "NEED_REPLY": "```REPLY TO A PHOTO!``` \n\n 💕 *Kyouko* 💕",
             "DOWNLOADING": "```MEDIA IS READING.``` \n\n 💕 *Kyouko* 💕",
             "ERROR": "```I COULDN'T READ THIS :/```\n*Error:*```{}```",
