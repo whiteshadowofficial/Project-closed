@@ -64,8 +64,6 @@
 **💕 Kyouko 💕 ,** is a WhatsApp helper bot written by Thevindu Hansara. Does not log into your account It is written on WhatsApp Web API.
 
 ## Setup
-### Very Simple Method
-`Soon as Possible...`
 
 ### Simple Method
 
@@ -74,9 +72,6 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ThevinduWA/kyouko)
 
 ##
-
-### ⚒️ Setup Wiki - Kurulum [Full Guide - Tam Anlatım]
-[![Setup - Kurulum](https://img.icons8.com/clouds/300/000000/settings.png)](https://github.com/phaticusthiccy/WhatsAsenaDuplicated/wiki)
 
 ##
 
@@ -97,13 +92,5 @@ If you are concerned about security, you can install it on your own computer. If
 Due to Userbot; Your WhatsApp account may be banned.
 This is an open source project, you are responsible for everything
 Absolutely, Asena executives do not accept responsibility.
-By establishing the Alpha, you are deemed to have accepted these responsibilities.
+By establishing the 💕 Kyouko 💕, you are deemed to have accepted these responsibilities.
 ```
-
-
-
-## License
-This project is protected by `GNU General Public Licence v3.0` license.
-
-### Disclaimer
-`WhatsApp` name, its variations and the logo are registered trademarks of Facebook. We have nothing to do with the registered trademark
