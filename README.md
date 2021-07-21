@@ -46,7 +46,6 @@
 💕 Kyouko 💕; Kyouko Bot,Made by Thevindu Hansara 
 
 
-----
 ![Docker Pulls](https://img.shields.io/docker/pulls/fusuf/whatsasena?style=flat-square) ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/fusuf/whatsasena?style=flat-square)
 
 ## 📢 Guide
