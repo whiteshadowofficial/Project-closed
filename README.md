@@ -44,8 +44,12 @@
 
 ```
 💕 Kyouko 💕; Kyouko Bot,Made by Thevindu Hansara 
-
 ```
+
+<div align="center">
+  <img src="https://avatars.githubusercontent.com/u/85176770?v=4" width="200" height="200">
+  <h1>🐺 Alpha Bot-V2</h1>
+</div>
 
 
 ----
