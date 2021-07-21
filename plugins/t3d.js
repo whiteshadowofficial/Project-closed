@@ -1,1 +1,36 @@
-const Asena = require('../events'); const {MessageType} = require('@adiwajshing/baileys'); const got = require('got'); const Language = require('../language'); const Lang = Language.getString('weather'); Asena.addCommand({pattern: 'joke ?(.*)', fromMe: false, desc: Lang.JOKE_DESC}, async (message, match) => { 	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA); 	const url = `https://official-joke-api.appspot.com/random_joke`; 	try { 		const response = await got(url); 		const json = JSON.parse(response.body); 		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*🗣️ ' + Lang.JOKE +'* ```' + json.setup + '```\n\n' + 		'*😆' + Lang.PUNCHLINE +'* ```' + json.punchline+ '```\n', MessageType.text); 	} catch { 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text); 	} });
+/* # Exclusively from Kyouko
+*/
+
+const Asena = require('../events');
+const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
+const fs = require('fs');
+const axios = require('axios');
+const Config = require('../config');
+const need = "type some word after command"
+
+if (Config.WORKTYPE == 'private') {
+
+    Asena.addCommand({ pattern: 't3d ?(.*)', fromMe: true,dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.sendMessage(need);
+
+        var ttinullimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=5OL4ma89DDedVKW59XEXIKivsII&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Made by ⚔️DATA THIEVES⚔️*' })
+
+    }));
+}
+
+else if (Config.WORKTYPE == 'public') {
+
+    Asena.addCommand({ pattern: 't3d ?(.*)', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
+
+        if (match[1] === '') return await message.sendMessage(need);
+
+        var ttinullimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=5OL4ma89DDedVKW59XEXIKivsII&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Made by ⚔️DATA THIEVES⚔️*' })
+
+    }));
+    
+}
