@@ -6,7 +6,7 @@ const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys'
 const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
-const need = "Type some word after command"
+const need = "```TYPE SOME WORD AFTER COMMAND``` \n\n 💕 *Kyouko* 💕"
 
 if (Config.WORKTYPE == 'private') {
 
