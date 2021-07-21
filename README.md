@@ -65,10 +65,6 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ThevinduWA/kyouko)
 
-##
-
-##
-
 ## F.A.Q
 Answer a few frequently asked questions;
 ### Can you read my messages?
