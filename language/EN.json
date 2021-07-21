@@ -185,7 +185,7 @@
             "TTS_ERROR": "```ERROR, SPEECH EXAMPLE OF YOUR SENTENCE COULDN'T BE MADE!``` \n\n 💕 *Kyouko* 💕",
             "SONG_DESC": "Uploads the song you wrote.",
             "NEED_TEXT_SONG": "```PLEASE WRITE A SONG!``` \n\n 💕 *Kyouko* 💕",
-            "NO_RESULT": "*I COULDN'T FIND ANYTHING \n\n 💕 *Kyouko* 💕",
+            "NO_RESULT": "```I COULDN'T FIND ANYTHING``` \n\n 💕 *Kyouko* 💕",
             "DOWNLOADING_SONG": "```SEARCHING YOUR SONG.``` \n\n 💕 *Kyouko* 💕",
             "UPLOADING_SONG": "```UPLOADING YOUR SONG.``` \n\n 💕 *Kyouko* 💕",
             "VIDEO_DESC": "Downloads video from YouTube.",
