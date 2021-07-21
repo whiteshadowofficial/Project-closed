@@ -47,17 +47,14 @@
 ```
 
 <div align="center">
-  <img src="https://avatars.githubusercontent.com/u/85176770?v=4" width="200" height="200">
-  <h1>🐺 Alpha Bot-V2</h1>
+  <h2>💕 Kyouko 💕</h1>
 </div>
 
 
 ----
 ![Docker Pulls](https://img.shields.io/docker/pulls/fusuf/whatsasena?style=flat-square) ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/fusuf/whatsasena?style=flat-square)
-
-## 📢 Guide
   
-## 🔎 Who is 💕 Kyouko 💕 ?
+## About
 **💕 Kyouko 💕 ,** is a WhatsApp helper bot written by Thevindu Hansara. Does not log into your account It is written on WhatsApp Web API.
 
 ## Setup
