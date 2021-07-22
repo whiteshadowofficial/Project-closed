@@ -7,7 +7,7 @@ const Config = require('../config');
 const BRAINLY_DESC = "Finds answer for your query on brainly."
 const BRAINLY_USAGE = ".brainly <Query>"
 
-const NEED_QUERY = "```Enter the Question!```"
+const NEED_QUERY = "```ENTER THE QUESTION!``` \n\n 💕 *Kyouko* 💕"
 
 Asena.addCommand({ pattern: 'brainly ?(.*)', fromMe: false, desc: BRAINLY_DESC, usage: BRAINLY_USAGE }, async (message, match) => {
 
