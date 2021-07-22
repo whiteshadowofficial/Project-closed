@@ -5,7 +5,7 @@ const axios = require('axios');
 
 
 
-Asena.addCommand({ pattern: 'random ?(.*)', fromMe: false, desc: 'word image' }, (async (message, match) => {
+Asena.addCommand({ pattern: 'zrandom ?(.*)', fromMe: false, desc: 'Random word image' }, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -23,7 +23,7 @@ Asena.addCommand({ pattern: 'random ?(.*)', fromMe: false, desc: 'word image' },
     r_text[11] = `https://api.xteam.xyz/textpro/goldfoilballon?text=${match[1]}&APIKEY=2376fa7786a47519` 
 
     var i = Math.floor(11*Math.random())
-    if (match[1] === '') return await message.sendMessage('NEED_WORD');
+    if (match[1] === '') return await message.sendMessage('```YOU MUST ENTER WORDS!``` \n\n 💕 *Kyouko* 💕');
     console.log(match[1])
 
     var ttinullimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
