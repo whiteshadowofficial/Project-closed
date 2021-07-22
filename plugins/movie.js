@@ -3,11 +3,11 @@ const { MessageType } = require('@adiwajshing/baileys');
 const got = require('got');
 //LyFE
 Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: false, desc: "Shows movie info." }, (async (message, match) => {
-	if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a name.```', MessageType.text, { quoted: message.data });
+	if (match[1] === '') return await message.client.sendMessage(message.jid, '```GIVE ME THE MOVIE NAME!``` \n\n 💕 *Kyouko* 💕', MessageType.text, { quoted: message.data });
 	let url = `http://www.omdbapi.com/?apikey=742b2d09&t=${match[1]}&plot=full`
 	const response = await got(url);
 	const json = JSON.parse(response.body);
-	if (json.Response != 'True') return await message.client.sendMessage(message.jid, '*Not found.*', MessageType.text, { quoted: message.data });
+	if (json.Response != 'True') return await message.client.sendMessage(message.jid, '```I COULDN'T FIND ANYTHING.``` \n\n 💕 *Kyouko* 💕', MessageType.text, { quoted: message.data });
 	let msg = '```';
 	msg += 'Title      : ' + json.Title + '\n\n';
 	msg += 'Year       : ' + json.Year + '\n\n';
