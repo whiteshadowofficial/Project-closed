@@ -1,5 +1,5 @@
 <div align="center">
-<a href="#"><img title="💕 Kyouko 💕" src="https://i.postimg.cc/jqD25kpB/IMG-20210716-WA0343.jpg"></a>
+<a href="#"><img title="💕 Kyouko 💕" src="https://i.postimg.cc/05TPgyYM/c3efa21a7c40c80f10cae87ff52026dc3b50c4b5r1-800-800-hq.png"></a>
 </p>
 
 <p align="center">
