@@ -4,11 +4,11 @@
     "LANGCODE": "en",
     "AUTHOR": "AsenaDev",
     "STRINGS": {
-        "_asena": {
+        "_x": {
             "COMMAND": "Command",
             "DESC": "Description",
             "EXAMPLE": "Example",
-            "NOT_FOUND": "*I couldnt find a command like this*",
+            "NOT_FOUND": "```I COULDN'T FIND A COMMAND LIKE THIS.```",
             "WARN": "Warn"
         },
         "_plugin": {
@@ -242,7 +242,7 @@
             "NEED_LOCATIONA": "```INVALID REQUEST.``` \n\n 💕 *Kyouko* 💕",
             "QUOTE": "Quote:",
             "AUTHOR": "Author:",
-            "NOT_FOUNDA": "```SORRY,I COULD NOT FIND A QUOTE.``` \n\n 💕 *Kyouko* 💕",
+            "NOT_FOUNDA": "```SORRY,I COULDN'T FIND A QUOTE.``` \n\n 💕 *Kyouko* 💕",
             "NAMEY": "Name:",
             "PUBLISHER": "Publisher",
             "MODINFO": "ModInfo",
