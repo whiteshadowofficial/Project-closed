@@ -13,8 +13,8 @@ const axios = require('axios');
 const request = require('request');
 const got = require("got");
 const Config = require('../config');
-const des = "You can PNG from Any Emoji"
-const iii = "```TYPE ANY EMOJI``` \n\n 💕 *Kyouko* 💕"
+const des = "You can PNG from any Emoji"
+const iii = "```YOU MUST ENTER EMOJI!``` \n\n 💕 *Kyouko* 💕"
 
 if (Config.WORKTYPE == 'private') {
 
