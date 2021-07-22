@@ -5,7 +5,7 @@ const axios = require('axios');
 
 
 
-Asena.addCommand({ pattern: 'zrandom ?(.*)', fromMe: false, desc: 'Random word image' }, (async (message, match) => {
+Asena.addCommand({ pattern: 'random ?(.*)', fromMe: false, desc: 'Random word image' }, (async (message, match) => {
 
     var r_text = new Array ();
 
