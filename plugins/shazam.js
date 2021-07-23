@@ -6,7 +6,7 @@ const axios = require('axios');
 const FormData = require('form-data');
 const ffmpeg = require('fluent-ffmpeg');
 
-Asena.addCommand({pattern: 'shazam', fromMe: false, desc: 'Shazam plugin'}, (async (message, match) => {
+Asena.addCommand({pattern: 'shazam', fromMe: false, desc: 'Find an unknown song'}, (async (message, match) => {
     if (message.reply_message === false) return await message.client.sendMessage(message.jid, '```REPLY TO A AUDIO!```  \n\n 💕 *Kyouko* 💕', MessageType.text);
     var filePath = await message.client.downloadAndSaveMediaMessage({
         key: {
