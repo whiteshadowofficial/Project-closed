@@ -1,7 +1,7 @@
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 
-Asena.addCommand({pattern: 'ask', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'ask', fromMe: false}, (async (message, match) => {
 
     await message.sendMessage('*S*');
     await message.sendMessage('*Se*');
@@ -33,13 +33,13 @@ Asena.addCommand({pattern: 'ask', fromMe: true}, (async (message, match) => {
 
 }));
 
-Asena.addCommand({pattern: 'infoask', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'infoask', fromMe: false}, (async (message, match) => {
 
     await message.sendMessage("*Codded by @Unique_hunter*\n*Seni seviyorum demenin güzel bir hali.*\n💻Usage: *.ask*")
 
 }));
    
-Asena.addCommand({pattern: 'love', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'love', fromMe: false}, (async (message, match) => {
 
     await message.sendMessage('*I*');
     await message.sendMessage('*I L*');
@@ -65,7 +65,7 @@ Asena.addCommand({pattern: 'love', fromMe: true}, (async (message, match) => {
 
 }));
 
-Asena.addCommand({pattern: 'infolove', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'infolove', fromMe: false}, (async (message, match) => {
 
     await message.sendMessage("*Codded by @Unique_hunter*\n*To say best way ı love you.*\n💻Usage: *.love*")
 
