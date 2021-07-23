@@ -30,7 +30,7 @@ Asena.addCommand({pattern: 'shazam', fromMe: false, desc: 'Shazam plugin'}, (asy
             if (res === 'success') {
                 await message.client.sendMessage(message.jid, `Title: ${res.title}\nArtist: ${res.artist}`, MessageType.text);
             } else {
-                await message.client.sendMessage(message.jid, '```I COULDN'T FIND ANYTHING!```  \n\n 💕 *Kyouko* 💕', MessageType.text);
+                await message.client.sendMessage(message.jid, '```I COULDN'T FIND ANYTHING!``` \n\n 💕 *Kyouko* 💕', MessageType.text);
             }
         }).catch((error) =>  {
             console.log(error);
