@@ -1,1 +1,42 @@
-const Asena = require('../events'); const {MessageType} = require('@adiwajshing/baileys'); const got = require('got'); const fs = require('fs'); const axios = require('axios'); const { errorMessage, infoMessage } = require('../helpers'); const IG_DESC = "Downloads Image/Video From Instagram" const NEED_WORD = "Must Enter a link" const FBDESC = "Downloads Video From FaceBook" const LOADING = "Downloading the Video..." const NOT_FOUNDFB = "Video Not Found" const CAPTION = "Caption" Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => { const userName = match[1] if (!userName) return await message.sendMessage(errorMessage(NEED_WORD)) await message.sendMessage(infoMessage("Downloading the Post...")) await axios .get(`https://api-anoncybfakeplayer.herokuapp.com/igdown?url=${userName}`) .then(async (response) => { const { url, type, } = response.data.result[0] const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'}) const msg = `${type}` 	 if (msg === 'image') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, { caption: "Made By MsJessica" })} 		 	 	if (msg === 'video') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, { caption: "Made By Msjessica" })} 	 }) .catch( async (err) => await message.sendMessage(errorMessage("Invaild Link, Please Enter a Vaild Instagram Link")), ) }, ) Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async (message, match) => { const userName = match[1] if (!userName) return await message.sendMessage(errorMessage(NEED_WORD)) await message.sendMessage(infoMessage(LOADING)) await axios .get(`https://videfikri.com/api/fbdl/?urlfb=${userName}`) .then(async (response) => { const { url, judul, } = response.data.result const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'}) const msg = `*${CAPTION}*: ${judul}` await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, { caption: "Made By MsJessica" }) }) .catch( async (err) => await message.sendMessage(errorMessage(NOT_FOUNDFB )), ) }, )
+const Asena = require('../events');
+const {MessageType,Mimetype} = require('@adiwajshing/baileys');
+
+const fs = require('fs');
+const axios = require('axios');
+const FormData = require('form-data');
+const ffmpeg = require('fluent-ffmpeg');
+
+const FIND_DESC = "Finds the Song"
+
+Asena.addCommand({pattern: 'music', fromMe: false, desc: FIND_DESC }, (async (message, match) => {
+    if (message.reply_message === false) return await message.client.sendMessage(message.jid, '*reply any mp3 audio file*', MessageType.text);
+    var filePath = await message.client.downloadAndSaveMediaMessage({
+        key: {
+            remoteJid: message.reply_message.jid,
+            id: message.reply_message.id
+        },
+        message: message.reply_message.data.quotedMessage
+    });
+    var form = new FormData();
+    ffmpeg(filePath).format('mp3').save('music.mp3').on('end', async () => {
+        form.append('api_token', '2bd1fcb3ccd15607f72cdbb527907ce6');
+        form.append('file', fs.createReadStream('./music.mp3'));
+        form.append('return', 'apple_music, spotify');
+        var configs = {
+            headers: {
+                ...form.getHeaders()
+            }
+        }
+        await axios.post('https://api.audd.io/', form, configs).then(async (response) => {
+            var res = response.data
+            if (res === 'success') {
+                await message.client.sendMessage(message.jid, `Title: ${res.title}\nArtist: ${res.artist}`, MessageType.text);
+            } else {
+                await message.client.sendMessage(message.jid, '*Song not found...*', MessageType.text);
+            }
+        }).catch((error) =>  {
+            console.log(error);
+        });
+    });
+
+}));
