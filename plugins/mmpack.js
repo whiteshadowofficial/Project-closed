@@ -12,7 +12,7 @@ const Ln = "*▷Pikachu🪐നിങ്ങൾ ആഗ്രഹിക്കുന�
 
 if (Config.WORKTYPE == 'public') {
     
-      Asena.addCommand({pattern: 'mpack', fromMe: false, desc: Ln,}, (async (message, match) => {
+      Asena.addCommand({pattern: 'mpack', fromMe: true, desc: Ln,}, (async (message, match) => {
 
     await message.client.sendMessage(
   
