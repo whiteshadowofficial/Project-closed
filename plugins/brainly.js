@@ -25,7 +25,7 @@ Asena.addCommand({ pattern: 'brainly ?(.*)', fromMe: false, desc: BRAINLY_DESC, 
 
             const msg = `*Question Brainly:* ${soal}
 *Answer Brainly:* ${jawaban.replace(/1Question/g, '*(1) Question*').replace(/2Question/g, '*(2) Question*').replace(/3Question/g, '*(3) Question*').replace(/Answer/g, '*Answer*').replace(/Brainly Found/g, '')}`
-            await message.client.sendMessage(message.jid, msg, MessageType.text, MessageType.text,{quoted: message.data)
+            await message.client.sendMessage(message.jid, msg, MessageType.text, quoted: message.data)
            })
       },
     )
