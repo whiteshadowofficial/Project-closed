@@ -229,9 +229,9 @@
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "_Updating..._",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
-            "UPDATED": "*.🐺 Successfully Updated!*",
+            "UPDATED": "*🐺 Successfully Updated!*",
             "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "*💬 Alpha Restarting Automatically █▒▒▒▒▒▒▒▒▒*",
+            "AFTER_UPDATE": "Alpha Restarting Automatically █▒▒▒▒▒▒▒▒▒*",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
