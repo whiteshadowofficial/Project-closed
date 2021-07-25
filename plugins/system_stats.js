@@ -25,7 +25,7 @@ Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (asyn
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/VID-20210209-WA0058.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.video, caption: "*▬🐺> ★ ᴀʟᴘͥʜͭᴀᷤ ʙͫᴏͤᴛ ★ < 🐺▬*\n```🔰ᵖᵒʷᵉʳᵈ ᵇʸ ʷʰᵃᵗˢᴬˢᵉⁿᵃⁿᵃ🔰```\n\n➢   *Hosted  •~* ```Heroku ✓```\n➢   *Version •~* ```v3.2 Beta ✓```\n➢   *Branch •~* ```Master ✓```\n>\n```https://chat.whatsapp.com/DQmOkafYuZGFDBWVcGB0Gw```\n**\n```Copyright All rights reserverd```" }
+            { mimetype: Mimetype.video, quoted: message.data, caption: "*▬🐺> ★ ᴀʟᴘͥʜͭᴀᷤ ʙͫᴏͤᴛ ★ < 🐺▬*\n```🔰ᵖᵒʷᵉʳᵈ ᵇʸ ʷʰᵃᵗˢᴬˢᵉⁿᵃⁿᵃ🔰```\n\n➢   *Hosted  •~* ```Heroku ✓```\n➢   *Version •~* ```v3.2 Beta ✓```\n➢   *Branch •~* ```Master ✓```\n>\n```https://chat.whatsapp.com/DQmOkafYuZGFDBWVcGB0Gw```\n**\n```Copyright All rights reserverd```" }
         )
     }
 }));
