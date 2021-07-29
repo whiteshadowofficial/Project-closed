@@ -12,7 +12,7 @@ const Lang = Language.getString('tagall');
 
 const Config = require('../config')
 
-Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+Asena.addCommand({pattern: 'tag ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
 
     if (match[1] !== '' && !message.reply_message) {
         grup = await message.client.groupMetadata(message.jid);
