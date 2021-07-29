@@ -6,33 +6,55 @@ Developer & Co-Founder - Phaticusthiccy
 */
 
 const Asena = require('../events');
-const {MessageType, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
+const {MessageType} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
 const Config = require('../config');
 const chalk = require('chalk');
-const fs = require('fs');
-const dil = require('axios');
+const axios = require('axios');
 
 const Language = require('../language');
 const Lang = Language.getString('system_stats');
 
-Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
+if (Config.WORKTYPE == 'private') {
+
+    Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+        
+        let pp
+        try { pp = await message.client.getProfilePicture(message.jid.includes('-') ? message.data.participant : message.jid ); } catch { pp = await message.client.getProfilePicture(); }
+        await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => { await message.client.sendMessage(message.jid, res.data, MessageType.image, { caption: Config.ALIVEMSG }); });
+    }));
+
+    Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
+
+        const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
+        await message.sendMessage(
+            '```' + child + '```', MessageType.text
+        );
+    }));
+}
+else if (Config.WORKTYPE == 'public') {
+
+   Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+        
+        let pp
+        try { pp = await message.client.getProfilePicture(message.jid.includes('-') ? message.data.participant : message.jid ); } catch { pp = await message.client.getProfilePicture(); }
+        await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => { await message.client.sendMessage(message.jid, res.data, MessageType.image, { caption: Config.ALIVEMSG }); });
+    }));
+
+    Asena.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
+
+        const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
+        await message.sendMessage(
+            '```' + child + '```', MessageType.text
+        );
+    }));
     
-    if (Config.ALIVEMSG == 'default') {
+    Asena.addCommand({pattern: 'psysd', fromMe: true, desc: Lang.SYSD_DESC, dontAddCommandList: true }, (async (message, match) => {
 
-        await message.client.sendMessage(
-            message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/VID-20210209-WA0058.mp4"),
-            MessageType.video, 
-            { mimetype: Mimetype.video, quoted: message.data, caption: "*▬🐺> ★ ᴀʟᴘͥʜͭᴀᷤ ʙͫᴏͤᴛ ★ < 🐺▬*\n```🔰ᵖᵒʷᵉʳᵈ ᵇʸ ʷʰᵃᵗˢᴬˢᵉⁿᵃⁿᵃ🔰```\n\n➢   *Hosted  •~* ```Heroku ✓```\n➢   *Version •~* ```v3.2 Beta ✓```\n➢   *Branch •~* ```Master ✓```\n>\n```https://chat.whatsapp.com/DQmOkafYuZGFDBWVcGB0Gw```\n**\n```Copyright All rights reserverd```" }
-        )
-    }
-}));
-
-Asena.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
-    const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
-    await message.sendMessage(
-        '```' + child + '```', MessageType.text
-    );
-}));
+        const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
+        await message.sendMessage(
+            '```' + child + '```', MessageType.text
+        );
+    }));
+}
