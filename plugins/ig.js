@@ -3,7 +3,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const IG_DESC = "Downloads Image/Video From Instagram"
 
-Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC }, async (message, match) => {
+Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC }, async (message, match) => {
     //if(match[1] == '') return
     let { data, type } = await instaGram(match[1], '917058a2392ad776');
     //if(type == undefined) return 
