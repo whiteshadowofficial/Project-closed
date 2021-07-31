@@ -81,7 +81,7 @@
             "SHUTDOWN_MSG": "```قطع الاتصال ⛔```",
             "DYNO_DESC": "تحقق من استخدام مقياس قوة heroku",
             "DYNO_TOTAL": "```Quota Total```",
-            "GR_DEL": "*تم تعيين رسالة الترحيب! * \n * استخدم الأمر التالي للحذف: * "". Goodbye delete & .welcome delete```",
+            "GR_DEL": "*تم تعيين رسالة الترحيب!*\n*استخدم الأمر التالي للحذف: * .goodbye delete & .welcome delete```",
             "DYNO_USED": "```تم استخدام حصة```",
             "PERCENTAGE": "```النسبة المئوية```",
             "DYNO_LEFT": "```متبقي```",
