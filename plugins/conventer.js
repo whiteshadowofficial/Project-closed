@@ -145,7 +145,7 @@ else if (Config.WORKTYPE == 'public') {
         ffmpeg(location)    
             .save('output.mp3')
             .on('end', async () => {
-                await message.client.sendMessage(mid, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
+                await message.client.sendMessage(mid, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: false});
             });
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
