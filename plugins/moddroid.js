@@ -22,7 +22,7 @@ Asena.addCommand({pattern: 'modd ?(.*)', fromMe: false, desc: "gives mod apps." 
 		msg += '*🏷️ ' + Lang.NAME +'* ```' + json.result[0].name + '```\n\n';
 		msg += '*🅿️ ' + Lang.LINK +':* ```' + json.result[0].link + '```\n\n';
 		await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
-}));
+});
  
 /*
 Asena.addCommand({pattern: 'apkp ?(.*)', fromMe: false, desc: "Mod apk from apkpure"}, async (message, match) => {
