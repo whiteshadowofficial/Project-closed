@@ -19,12 +19,9 @@ Asena.addCommand({pattern: 'modd ?(.*)', fromMe: false, desc: "gives mod apps." 
 		const json = JSON.parse(response.body);
 		if (json.Response != 'True') return await message.client.sendMessage(message.jid, '*Not found..*', MessageType.text, { quoted: message.data });
                 let msg = '```';
-		msg += '*🏷️ ' + Lang.NAMEY +'* ```' + json.result[0].title + '```\n\n';
-		msg += '*🅿️ ' + Lang.PUBLISHER +':* ```' + json.result[0].publisher+ '```\n\n';
-		msg += '*📝 ' + Lang.MODINFO +':* ```' + json.result[0].mod_info + '```\n\n';
-		msg += '*📦 ' + Lang.SIZE +'* ```' + json.result[0].size + '```\n\n';
-		msg += '*⬇️ ' + Lang.DOWNLOAD +':* ```' + json.result[0].download + '```\n'; 
-	        await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
+		msg += '*🏷️ ' + Lang.NAME +'* ```' + json.result[0].name + '```\n\n';
+		msg += '*🅿️ ' + Lang.LINK +':* ```' + json.result[0].link + '```\n\n';
+		await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
 }));
  
 /*
