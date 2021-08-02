@@ -100,68 +100,68 @@
             "DEGİS_DESC": "استبدال نص الوحدات النمطية على قيد الحياة ، AFK."          
         },
         "filters": {
-            "FILTER_DESC": "Ele adiciona um filtro. Se alguém escreve seu filtro, ele envia a resposta. Se você apenas escrever .filter, ele mostra sua lista de filtros.",
-            "NO_FILTER": "*❌ Não há filtros neste chat!*",
-            "FILTERS": "*🔎 Aí estão os seus filtros neste chat:*",
-            "NEED_REPLY": "*❌ Por favor digite uma resposta!*\n*Exemplo:*",
-            "FILTERED": "*✅ Definido com sucesso* ```{}``` *para filtrar!*",
-            "STOP_DESC": "Para o filtro que você adicionou anteriormente.",
-            "NEED_FILTER": "*❌ Por favor digite um filtro!*\n*Exemplo:*",
-            "ALREADY_NO_FILTER": "*❌ Já não existe filtro como este!*",
-            "DELETED": "*✅ O filtro foi excluído com sucesso!*"
+            "FILTER_DESC": "يضيف مرشح. إذا كتب شخص ما مرشح الخاص بك, يرسل الرد. إذا قمت فقط بكتابة .filter ، فسيظهر قائمة عوامل التصفية الخاصة بك.",
+            "NO_FILTER": "*❌ لا توجد مرشحات في هذه الدردشة!*",
+            "FILTERS": "*🔎 هناك عوامل التصفية الخاصة بك في هذه الدردشة:*",
+            "NEED_REPLY": "*❌الرجاء إدخال إجابة! *\n* مثال:*",
+            "FILTERED": "*ضبط بنجاح * "" {} "" * للتصفية!*",
+            "STOP_DESC": "للمرشح الذي أضفته في وقت سابق.",
+            "NEED_FILTER": "*❌الرجاء إدخال عامل تصفية! *\n* مثال:*",
+            "ALREADY_NO_FILTER": "*❌ لم يعد هناك مرشح مثل هذا!*",
+            "DELETED": "*✅ تم حذف الفلتر بنجاح!*"
         },
         "greetings": {
-            "WELCOME_DESC": "Ele define a mensagem de boas-vindas. Se você deixar em branco, ele mostra a mensagem de boas-vindas.",
-            "NOT_SET_WELCOME": "*Você ainda não definiu a mensagem de boas-vindas.!*\n**Determinar:** ```.welcome hi && hi#how are you?```",
-            "WELCOME_ALREADY_SETTED": "*✅ Mensagem de boas-vindas já definida!*\n*Mensagem:* ```",
-            "NEED_WELCOME_TEXT": "*Você deve escrever uma mensagem para configurar a mensagem de boas-vindas.*\n*Exemplo:* ```.welcome hi && hi#how are you?```",
-            "WELCOME_DELETED": "*✅ A mensagem de boas-vindas foi excluída com sucesso!*",
-            "WELCOME_SETTED": "*✅A mensagem de boas-vindas foi definida com sucesso!*",
-            "GOODBYE_DESC": "Define a mensagem de despedida. Se você deixar em branco, é a mensagem de despedida.",
-            "NOT_SET_GOODBYE": "*Você não definiu uma mensagem de despedida!*\n*Determinar:* ```.goodbye bye && bye#see ya```",
-            "GOODBYE_ALREADY_SETTED": "*✅ A mensagem de despedida foi definida!*\n*Mensagem:* ```",
-            "NEED_GOODBYE_TEXT": "*Você deve escrever uma mensagem para configurar a mensagem de adeus.*\n*Exemplo:* ```.goodbye bye && bye#see ya```",
-            "GOODBYE_DELETED": "*✅ A mensagem de adeus foi excluída com sucesso!*",
-            "GOODBYE_SETTED": "*✅ A mensagem de adeus foi configurada com sucesso!*"
+            "WELCOME_DESC": "إنها تحدد رسالة الترحيب. إذا تركته فارغًا ، فسيتم عرض رسالة الترحيب.",
+            "NOT_SET_WELCOME": "*لم تقم بتعيين رسالة الترحيب بعد.! *\n** تحديد: ** "". أهلا وسهلا بك && مرحبا # كيف حالك؟```",
+            "WELCOME_ALREADY_SETTED": "*✅ تم تعيين رسالة الترحيب بالفعل! *\n* الرسالة:* ```",
+            "NEED_WELCOME_TEXT": "*يجب عليك كتابة رسالة لتهيئة رسالة الترحيب. *\n* مثال:* "" .welcome hi && hi # how are you?```",
+            "WELCOME_DELETED": "*✅ تم حذف رسالة الترحيب بنجاح!*",
+            "WELCOME_SETTED": "*✅تم تعيين رسالة الترحيب بنجاح!*",
+            "GOODBYE_DESC": "يضبط رسالة الوداع. إذا تركته فارغًا ، فهذه هي رسالة الوداع.",
+            "NOT_SET_GOODBYE": "*لم تقم بتعيين رسالة وداع! *\n* تحديد: * "" .goodbye && bye # see ya```",
+            "GOODBYE_ALREADY_SETTED": "*✅ تم ضبط رسالة الوداع! *\n* الرسالة:* ```",
+            "NEED_GOODBYE_TEXT": "*يجب عليك كتابة رسالة لإعداد رسالة الوداع.*\n*مثال:* ```.goodbye bye && bye#see ya```",
+            "GOODBYE_DELETED": "*✅ تم حذف رسالة الوداع بنجاح!*",
+            "GOODBYE_SETTED": "*✅ تم تكوين رسالة الوداع بنجاح!*"
         },
         "lydia": {
-            "ADDLYDIA_DESC": "Ativa Lydia (AI) para o usuário.",
-            "NEED_REPLY": "```Responda à mensagem de um usuário!```",
-            "COFFEEHOUSE": "```Você não definiu a Coffehouse API Key! ```",
-            "ENABLED_LYDIA": "```Lydia foi ativada para este usuário!```",
-            "RMLYDIA_DESC": "Desabilita Lydia para o usuário.",
-            "ALREADY_EMPTY": "```Sua lista de usuários já está vazia!```",
-            "NOT_ADDED": "```Você ainda não adicionou este usuário!```",
-            "DISABLED": "```Lydia foi desativada para este usuário!```"
+            "ADDLYDIA_DESC": "ينشط Lydia (AI) للمستخدم.",
+            "NEED_REPLY": "```الرد على رسالة المستخدم!```",
+            "COFFEEHOUSE": "```لم تقم بتعريف مفتاح Coffehouse API! ```",
+            "ENABLED_LYDIA": "```تم تفعيل ليديا لهذا المستخدم!```",
+            "RMLYDIA_DESC": "قم بتعطيل Lydia للمستخدم.",
+            "ALREADY_EMPTY": "```قائمة المستخدم الخاصة بك فارغة بالفعل!```",
+            "NOT_ADDED": "```لم تقم بإضافة هذا المستخدم حتى الآن.!```",
+            "DISABLED": "```تم تعطيل ليديا لهذا المستخدم!```"
         },
         "memes": {
-            "MEMES_DESC": "Memes de fotos que você respondeu.",
-            "NEED_REPLY": "*Responder a uma foto!*",
-            "DOWNLOADING": "```Baixando mídia e criando meme...```"
+            "MEMES_DESC": "صور الميمات التي أجبت عليها.",
+            "NEED_REPLY": "*الرد على الصورة!*",
+            "DOWNLOADING": "```جارٍ تنزيل الوسائط وإنشاء الميمات ...```"
         },
         "ocr": {
-            "OCR_DESC": "Lê o texto na foto que você respondeu.",
-            "NEED_REPLY": "*Responder a uma foto!*",
-            "DOWNLOADING": "```A mídia está sendo baixada e lida...```",
-            "ERROR": "```Eu não consegui ler isso :/```\n*Erro:*```{}```",
-            "RESULT": "*Língua:* ```{}```\n*Aqui está o que eu li:* ```{}```"
+            "OCR_DESC": "اقرأ النص الموجود على الصورة التي قمت بالرد عليها.",
+            "NEED_REPLY": "*الرد على الصورة!*",
+            "DOWNLOADING": "```يتم تنزيل الوسائط وقراءتها...```",
+            "ERROR": "```لم أتمكن من قراءة هذا:/```\n*خطأ:*```{}```",
+            "RESULT": "*لسان:* ```{}```\n*هذا ما قرأته:* ```{}```"
         },
         "profile": {
-            "KICKME_DESC": "Ele tira você do grupo em que está usando.",
-            "KICKME": "```Tchau tchau! eu estou indo 🤠```",
-            "PP_DESC": "Torna a foto do perfil a foto que você responde.",
-            "NEED_PHOTO": "*Me da uma foto!*",
-            "PPING": "```Definindo foto de perfil...```",
-            "BLOCK_DESC": "Bloquear usuário.",
-            "UNBLOCK_DESC": "Desbloquear usuário.",
-            "BLOCKED": "bloqueado",
-            "UNBLOCKED": "desbloqueado",
-            "BLOCKED_UPPER": "Bloqueado!",
-            "UNBLOCKED_UPPER": "Desbloqueado.",
-            "NEED_USER": "Dê-me um usuário!",
-            "JID_DESC": "Dando o JID do usuário.",
-            "JID": "```Endereço JID de``` @{} ```: {}```",
-            "JID_CHAT": "```Endereço JID do bate-papo: {}```"
+            "KICKME_DESC": "يأخذك خارج المجموعة التي تستخدمها.",
+            "KICKME": "```مع السلامة! انا ذاهب 🤠```",
+            "PP_DESC": "يجعل صورة الملف الشخصي هي الصورة التي ترد عليها.",
+            "NEED_PHOTO": "*اعطيني صورة!*",
+            "PPING": "```ضبط صورة الملف الشخصي...```",
+            "BLOCK_DESC": "مستخدم محضور.",
+            "UNBLOCK_DESC": "فتح المستخدم.",
+            "BLOCKED": "منعت",
+            "UNBLOCKED": "مفتوحة",
+            "BLOCKED_UPPER": "ممنوع!",
+            "UNBLOCKED_UPPER": "مفتوحة.",
+            "NEED_USER": "أعطني مستخدم!",
+            "JID_DESC": "اعطاء JID الخاص بالمستخدم.",
+            "JID": "```عنوان JID لـ``` @{} ```: {}```",
+            "JID_CHAT": "```عنوان الدردشة JID: {}```"
         },
         "removebg": {
             "REMOVEBG_DESC": "Remove o fundo das fotos.",
