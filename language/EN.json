@@ -185,8 +185,8 @@
             "SONG_DESC": "Uploads the song you wrote.",
             "NEED_TEXT_SONG": "*oru song name thado!*\n*Example:* ```.song eminem - rap god```",
             "NO_RESULT": "*I couldn't find anything :(*",
-            "DOWNLOADING_SONG": "ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ  𝟸:𝟷𝟾 / 𝟹:𝟻𝟼⠀───○....",
-            "UPLOADING_SONG": "ᴜᴘʟᴏᴀᴅɪɴɢ  ⎙",
+            "DOWNLOADING_SONG": "ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ   ⎙",
+            "UPLOADING_SONG": "ᴜᴘʟᴏᴀᴅɪɴɢ   ⌲",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
             "DOWNLOADING_VIDEO": "```LOADING......```",
@@ -231,7 +231,7 @@
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
             "UPDATED": "*🐺 Successfully Updated!*",
             "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "Alpha Restarting Automatically █▒▒▒▒▒▒▒▒▒*",
+            "AFTER_UPDATE": "*Alpha Restarting Automatically █▒▒▒▒▒▒▒▒▒*",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
