@@ -957,7 +957,7 @@ else if (config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data})
 
         await axios
-          .get(`https://api.lolhuman.xyz/api/ytplay2?apikey=6d8f65061357712bad246857=${userName}`)
+          .get(`https://api.lolhuman.xyz/api/ytplay2?apikey=queenamdibot&query=${userName}`)
           .then(async (response) => {
             const {
               audio,
