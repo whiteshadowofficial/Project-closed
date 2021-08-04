@@ -4,52 +4,86 @@ you may not use this file except in compliance with the License.
 WhatsAsenaDuplicated
 */
 
-const Asena = require('../events');
-const { MessageType } = require('@adiwajshing/baileys');
-const got = require('got');
-const Config = require('../config');
+const Asena = require('../events')
+const { MessageType } = require('@adiwajshing/baileys')
+const axios = require('axios')
+const cn = require('../config');
+const { fetchJson, getBuffer } = require('./fetcher')
 
-const Language = require('../language');
-const Lang = Language.getString('weather');
+const Language = require('../language')
+const Lang = Language.getString('search')
 
-Asena.addCommand({pattern: 'modd ?(.*)', fromMe: false, desc: "gives mod apps." }, async (message, match) => {
-	if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a name.```', MessageType.text, { quoted: message.data });
-	let url = 'https://api.lolhuman.xyz/api/moddroid?apikey=6d8f65061357712bad246857&query=${match[1]}&plot=full'
-	        const response = await got(url);
-		const json = JSON.parse(response.body);
-		if (json.Response != 'True') return await message.client.sendMessage(message.jid, '*Not found..*', MessageType.text, { quoted: message.data });
-                let msg = '```';
-		msg += '*🏷️ ' + Lang.NAME +'* ```' + json.result[0].name + '```\n\n';
-		msg += '*🅿️ ' + Lang.LINK +':* ```' + json.result[0].link + '```\n\n';
-		await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
-});
- 
-/*
-Asena.addCommand({pattern: 'apkp ?(.*)', fromMe: false, desc: "Mod apk from apkpure"}, async (message, match) => {
-	if (match[1] === '') return await message.reply(Lang.NEED_APPNAME);
-	const url = `https://docs-jojo.herokuapp.com/api/apk-pure?q=${match[1]}`;
-	try {
-		const response = await got(url);
-		const json = JSON.parse(response.body);
-		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 
-		'*🏷️ ' + Lang.NAMEY +'* ```' + match[1] + '```\n\n' +
-		'*📝 ' + Lang.MODINFO +':* ```' + json.result[0].version + '```\n\n' + 
-		'*📦 ' + Lang.SIZE +'* ```' + json.result[0].filesize + '```\n\n' + 
-		'*⬇️ ' + Lang.DOWNLOAD +':* ```' + json.result[0].url + '```\n', MessageType.text);
-	} catch {
-		return await message.client.sendMessage(message.jid, "oops ;)", MessageType.text);
-	}
-});
-Asena.addCommand({pattern: 'apkp ?(.*)', fromMe: false, desc: "Mod apk from apkpure"}, async (message, match) => {
-	const url = `https://leyscoders-api.herokuapp.com/api/apkpure?q=${match[1]}&apikey=VFCQVEWL`;
-	try {
-		const response = await got(url);
-		const json = JSON.parse(response.body);
-		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 
-		'*🏷️ ' + Lang.NAMEY +'* ```' + match[1] + '```\n\n' +
-		'*⬇️ ' + Lang.DOWNLOAD +':* ```' + json.result[0].url + '```\n', MessageType.text);
-	} catch {
-		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
-	}
-});
-*/
+
+if (Config.WORKTYPE == 'private') {
+  Asena.addCommand({ pattern: 'mod ?(.*)', fromMe: true, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
+    var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
+
+    get_result = await fetchJson(`https://api.lolhuman.xyz/api/moddroid?apikey=qamdi5652&query=${match[1]}`)
+                    get_result = get_result.result
+                    ini_txt = ""
+                    for (var x of get_result) {
+                        ini_txt += `Name : ${x.name}\n`
+                        ini_txt += `Link : ${x.link}\n\n`
+                    }
+
+    await message.client.sendMessage(message.jid,ini_txt,MessageType.text, {quoted: message.data});
+    await reply.delete();
+  })
+
+  Asena.addCommand({ pattern: 'spo ?(.*)', fromMe: true, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
+    var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
+
+    get_result = await fetchJson(`https://api.lolhuman.xyz/api/spotifysearch?apikey=qamdi5652&query=${match[1]}`)
+                    get_result = get_result.result
+                    ini_txt = ""
+                    for (var x of get_result) {
+                        ini_txt += `Title : ${x.title}\n`
+                        ini_txt += `Artists : ${x.artists}\n`
+                        ini_txt += `Link : ${x.link}\n\n`
+                    }
+
+    await message.client.sendMessage(message.jid,ini_txt,MessageType.text, {quoted: message.data});
+    await reply.delete();
+  })
+}
+else if (Config.WORKTYPE == 'public') {
+  Asena.addCommand({ pattern: 'mod ?(.*)', fromMe: false, desc: Lang.USAGE }, async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
+    var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
+
+    get_result = await fetchJson(`https://api.lolhuman.xyz/api/moddroid?apikey=qamdi5652&query=${match[1]}`)
+                    get_result = get_result.result
+                    ini_txt = ""
+                    for (var x of get_result) {
+                        ini_txt += `Name : ${x.name}\n`
+                        ini_txt += `Link : ${x.link}\n\n`
+                    }
+
+    await message.client.sendMessage(message.jid,ini_txt,MessageType.text, {quoted: message.data});
+    await reply.delete();
+  })
+
+  Asena.addCommand({ pattern: 'spo ?(.*)', fromMe: false, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
+    var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
+
+    get_result = await fetchJson(`https://api.lolhuman.xyz/api/spotifysearch?apikey=qamdi5652&query=${match[1]}`)
+                    get_result = get_result.result
+                    ini_txt = ""
+                    for (var x of get_result) {
+                        ini_txt += `Title : ${x.title}\n`
+                        ini_txt += `Artists : ${x.artists}\n`
+                        ini_txt += `Link : ${x.link}\n\n`
+                    }
+
+    await message.client.sendMessage(message.jid,ini_txt,MessageType.text, {quoted: message.data});
+    await reply.delete();
+  })
+    
+}
