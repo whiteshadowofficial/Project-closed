@@ -29,6 +29,7 @@ module.exports = {
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
+    MENUTEXT: process.env.MENU === undefined ?'▬🐺> ★ ᴀʟᴘͥʜͭᴀᷤ ʙͫᴏͤᴛ ★ < 🐺▬' : process.env.MENU
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
     NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
