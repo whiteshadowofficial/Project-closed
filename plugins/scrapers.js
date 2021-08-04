@@ -947,38 +947,6 @@ else if (config.WORKTYPE == 'public') {
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: false});
             });
     }));
-    
-     Asena.addCommand({ pattern: 'isong ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => {
-
-        const userName = match[1]
-
-        if (!userName) return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text, {quoted: message.data})
-
-        await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data})
-
-        await axios
-          .get(`https://api.lolhuman.xyz/api/ytplay2?apikey=queenamdibot&query=${userName}`)
-          .then(async (response) => {
-            const {
-              audio,
-              title,
-            } = response.data.result
-            const {
-                status,
-              } = response.data
-
-            const profileBuffer = await axios.get(audio, {responseType: 'arraybuffer'})
-
-            const msg = `${status}`
-
-      if (msg === '500') { await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text)}
-          
-      if (msg === '200') { 
-        await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'})
-        }
-          })
-    }));
 
     Asena.addCommand({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
