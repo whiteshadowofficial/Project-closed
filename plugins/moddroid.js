@@ -27,6 +27,6 @@ Asena.addCommand({ pattern: 'mod ?(.*)', fromMe: false, desc: Lang.USAGE,  delet
 
     await message.client.sendMessage(message.jid,ini_txt,MessageType.text, {quoted: message.data});
     await reply.delete();
-    }
-              
-});
+  })
+    
+} 
