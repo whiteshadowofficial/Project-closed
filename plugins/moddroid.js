@@ -8,7 +8,6 @@ const Asena = require('../events')
 const { MessageType } = require('@adiwajshing/baileys')
 const axios = require('axios')
 const cn = require('../config');
-const { fetchJson, getBuffer } = require('./fetcher')
 
 const Language = require('../language')
 const Lang = Language.getString('search')
