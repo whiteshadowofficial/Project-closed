@@ -29,4 +29,4 @@ Asena.addCommand({ pattern: 'mod ?(.*)', fromMe: false, desc: Lang.USAGE,  delet
     await reply.delete();
   })
 
- }));
+ ));
