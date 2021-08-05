@@ -10,9 +10,8 @@ const got = require('got');
 const Language = require('../language')
 const Lang = Language.getString('weather')
 
-Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: true, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
-    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);   
-    var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
+Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: "Finds mod verssion." },  (async (message, match) => {
+    if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a app name.```', MessageType.text, { quoted: message.data });       
     let url = `https://api.lolhuman.xyz/api/moddroid?apikey=qamdi5652&query=${match[1]}`
     const response = await got(url);
     const json = JSON.parse(response.body);
