@@ -15,7 +15,7 @@ Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: "Finds mod verssi
     if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a app name.```', MessageType.text, { quoted: message.data });
     var reply = await message.client.sendMessage(message.jid, '```searching```', MessageType.text, {quoted: message.data});
     
-    get_result = await fetchJson(`https://api.lolhuman.xyz/api/moddroid?apikey=6d8f65061357712bad246857&query=${match[1]}`)
+    get_result = await fetchJson(`https://api.lolhuman.xyz/api/moddroid?apikey=qamdi5652&query=${match[1]}`)
                     get_result = get_result.result
                     ini_txt = "" 
                     for (var x of get_result) {
