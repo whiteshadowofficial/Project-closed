@@ -22,6 +22,5 @@ Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: "Finds mod verssi
     
         }
     
-   await message.client.sendMessage(message.jid,ini_txt,MessageType.text, {quoted: message.data });
-    
+   await message.client.sendMessage(message.jid,ini_txt,MessageType.text, {quoted: message.data });    
 }));   
