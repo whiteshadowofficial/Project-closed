@@ -20,4 +20,4 @@ Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: "Finds mod verssi
     ini_txt += `Name : ${x.name}\n`
     ini_txt += `Link : ${x.link}\n\n` 
     await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
-})
+}
