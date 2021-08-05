@@ -16,7 +16,7 @@ Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: true, desc: Lang.USAGE,  delet
     let url = `https://api.lolhuman.xyz/api/moddroid?apikey=qamdi5652&query=${match[1]}`
     const response = await got(url);
     const json = JSON.parse(response.body);
-    let msg = '```'; = ""
+    let msg = '```'; 
     msg += `Name : ' + json.name + '\n\n';
     msg += `Link : ' + json.link + '\n\n'; 
     await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
