@@ -15,6 +15,7 @@ Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: "Finds mod verssi
     let url = `https://api.lolhuman.xyz/api/moddroid?apikey=qamdi5652&query=${match[1]}`
     const response = await got(url);
     const json = JSON.parse(response.body);
+    if (json.Response != 'True') return await message.client.sendMessage(message.jid, '*Not found.*', MessageType.text, { quoted: message.data });
     let msg = '```'; 
     msg += `Name : ' + json.name + '\n\n';
     msg += `Link : ' + json.link + '\n\n'; 
