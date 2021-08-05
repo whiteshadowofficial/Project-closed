@@ -18,6 +18,6 @@ Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: "Finds mod verssi
     if (json.Response != 'True') return await message.client.sendMessage(message.jid, '*Not found.*', MessageType.text, { quoted: message.data });
     let msg = '```'; 
     msg += `Name : ' + json.name + '\n\n';
-    msg += `Link : ' + json.link + '\n\n'; 
+    msg += `Link : ' + json.link + '```'; 
     await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
 }));
