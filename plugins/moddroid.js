@@ -7,9 +7,6 @@ const Asena = require('../events')
 const { MessageType } = require('@adiwajshing/baileys')
 const got = require('got');
 
-const Language = require('../language')
-const Lang = Language.getString('weather')
-
 Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: "Finds mod verssion." },  (async (message, match) => {
     if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a app name.```', MessageType.text, { quoted: message.data });       
     let url = `https://api.lolhuman.xyz/api/moddroid?apikey=qamdi5652&query=${match[1]}&plot=full`
