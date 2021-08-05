@@ -14,8 +14,7 @@ const Lang = Language.getString('weather')
 
 
 if (cn.WORKTYPE == 'private') {
-  
-  Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: true, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
+    Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: true, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
     var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
@@ -51,7 +50,6 @@ if (cn.WORKTYPE == 'private') {
   })
 }
 else if (cn.WORKTYPE == 'public') {
-  
   Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: Lang.USAGE }, async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
