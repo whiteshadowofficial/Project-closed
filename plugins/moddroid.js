@@ -13,7 +13,7 @@ const Language = require('../language')
 const Lang = Language.getString('weather')
 
 
-if (Config.WORKTYPE == 'private') {
+if (cn.WORKTYPE == 'private') {
   
   Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: true, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
 
@@ -50,7 +50,7 @@ if (Config.WORKTYPE == 'private') {
     await reply.delete();
   })
 }
-else if (Config.WORKTYPE == 'public') {
+else if (cn.WORKTYPE == 'public') {
   
   Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: Lang.USAGE }, async (message, match) => {
 
