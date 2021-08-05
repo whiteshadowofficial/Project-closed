@@ -12,13 +12,12 @@ const Lang = Language.getString('search')
 
 Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: "Finds mod verssion." },  (async (message, match) => {
     if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a app name.```', MessageType.text, { quoted: message.data });
-    var reply = await message.client.sendMessage(message.jid,Lang.GET_MODD,MessageType.text, {quoted: message.data});
-    let url = `https://api.lolhuman.xyz/api/moddroid?apikey=qamdi5652&query=${match[1]}`
-    const response = await got(url);
-    const json = JSON.parse(response.body);
-    if (json.Response != 'True') return await message.client.sendMessage(message.jid, '*Not found.*', MessageType.text, { quoted: message.data });
-    let msg = '```'; 
-    msg += `Name : ' + json.name + '\n\n';
-    msg += `Link : ' + json.link + '```'; 
+    var reply = await message.client.sendMessage(message.jid, '```searching```', MessageType.text, {quoted: message.data});
+    get_result = await fetchJson(`https://api.lolhuman.xyz/api/moddroid?apikey=qamdi5652&query=${match[1]}`)
+    get_result = get_result.result
+    ini_txt = "" 
+    for (var x of get_result) {
+    ini_txt += `Name : ${x.name}\n`
+    ini_txt += `Link : ${x.link}\n\n` 
     await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
 }));
