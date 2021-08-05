@@ -1,7 +1,7 @@
 /* Copyright (C) 2021 srezz.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAsenaDuplicated
+WhatsAsenaDuplicated*/
 
 const Asena = require('../events')
 const { MessageType } = require('@adiwajshing/baileys')
@@ -13,7 +13,8 @@ const Language = require('../language')
 const Lang = Language.getString('weather')
 
 
-if (cn.WORKTYPE == 'private') {
+if (Config.WORKTYPE == 'private') {
+  
   Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: true, desc: Lang.USAGE,  deleteCommand: false }, async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
@@ -49,7 +50,8 @@ if (cn.WORKTYPE == 'private') {
     await reply.delete();
   })
 }
-else if (cn.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
+  
   Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: Lang.USAGE }, async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
