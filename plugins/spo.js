@@ -23,10 +23,10 @@ Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: true, desc: "```Download so
     
             const profileBuffer = await axios.get(link, {responseType: 'arraybuffer'})
     
-            await message.client.sendMessage(message.jid,Lang.SPO_UP,MessageType.text);
+            await message.client.sendMessage(message.jid, '```UPLOADING..```',MessageType.text);
             await message.client.sendMessage(message.jid,Buffer.from(profileBuffer.data), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false})
         })
         .catch(
           async (err) => await message.client.sendMessage(message.jid,'```NOT FOUND```',MessageType.text, {quoted: message.data});
            
-     }));
+}));
