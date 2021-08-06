@@ -31,7 +31,7 @@ if (Config.WORKTYPE == 'private') {
         .catch(
           async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
         )
-      },
+      }
     )
 }
 
@@ -57,5 +57,5 @@ else if (Config.WORKTYPE == 'public') {
         .catch(
           async (err) => await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data}),
         )
-      },
+      }
     )
