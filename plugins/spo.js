@@ -57,4 +57,4 @@ else if (Config.WORKTYPE == 'public') {
         .catch(
           async (err) => await message.client.sendMessage(message.jid,'```NOT FOUND```',MessageType.text, {quoted: message.data}),
            
-}));
+});
