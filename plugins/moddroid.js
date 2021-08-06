@@ -11,7 +11,7 @@ const { fetchJson, getBuffer } = require('./fetcher')
 const Language = require('../language')
 const Lang = Language.getString('search')
 
-Asena.addCommand({ pattern: 'modd ?(.*)', fromMe: false, desc: "Finds mod verssion." },  (async (message, match) => {
+Asena.addCommand({ pattern: 'mod ?(.*)', fromMe: false, desc: "Finds mod verssion." },  (async (message, match) => {
     if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a app name.```', MessageType.text, { quoted: message.data });
     var reply = await message.client.sendMessage(message.jid, '```searching```', MessageType.text, {quoted: message.data});
     
