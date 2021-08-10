@@ -42,5 +42,3 @@ Asena.addCommand({pattern: 'hdwa', fromMe: false, desc: "```Give random HD wallp
         await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.document, {filename: 'Alpha.jpg', mimetype: Mimetype.jpg})
         
      }));
-       
-       
