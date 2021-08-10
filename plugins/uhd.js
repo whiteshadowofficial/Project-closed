@@ -35,7 +35,7 @@ Asena.addCommand({pattern: 'hdwa', fromMe: false, desc: "```Give random HD wallp
        r_text[19] = "https://images4.alphacoders.com/206/206268.jpg";
        r_text[20] = "https://images6.alphacoders.com/613/613932.png";
        r_text[20] = "https://images5.alphacoders.com/613/613925.jpg";
-       var i = Math.floor(621*Math.random())
+       var i = Math.floor(21*Math.random())
        
        var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
        
