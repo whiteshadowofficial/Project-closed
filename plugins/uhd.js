@@ -39,6 +39,6 @@ Asena.addCommand({pattern: 'hdwa', fromMe: false, desc: "```Give random HD wallp
        
        var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
        
-        await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.document, {filename: 'Alpha.jpg', mimetype: Mimetype.jpg})
+        await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.document, {filename: 'Alpha.jpg', mimetype: Mimetype.png})
         
      }));
