@@ -8,7 +8,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('spotify');
 
-Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: true, desc: "```Download song from spotify```",  (async (message, match) => {
+Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: "Download song from spotify",  (async (message, match) => {
 
         const link = match[1]
     
@@ -24,9 +24,6 @@ Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: true, desc: "```Download so
             const profileBuffer = await axios.get(link, {responseType: 'arraybuffer'})
     
             await message.client.sendMessage(message.jid, '```UPLOADING..```',MessageType.text);
-            await message.client.sendMessage(message.jid,Buffer.from(profileBuffer.data), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false})
-        })
-        .catch(
-          async (err) => await message.client.sendMessage(message.jid,'```NOT FOUND```',MessageType.text, {quoted: message.data});
-           
-}));
+            await message.client.sendMessage(message.jid,Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'})
+             });
+    }));
