@@ -25,5 +25,9 @@ Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: "Download song
     
             await message.client.sendMessage(message.jid, '```UPLOADING..```',MessageType.text);
             await message.client.sendMessage(message.jid,Buffer.from(profileBuffer.data), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg'})
-             });
-    }));
+        })
+        .catch(
+         async (err) => await message.sendMessage(""),
+      )
+  },
+)
