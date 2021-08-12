@@ -8,7 +8,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('spotify');
 
-Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: "Download song from spotify",  (async (message, match) => {
+Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: "Download song from spotify" }, (async (message, match) => {
 
         const link = match[1]
     
