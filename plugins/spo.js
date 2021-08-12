@@ -30,5 +30,4 @@ Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: "Download song
         .catch(
          async (err) => await message.sendMessage(""),
       )
-  },
-)
+  }
