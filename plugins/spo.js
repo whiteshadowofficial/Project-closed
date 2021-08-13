@@ -13,7 +13,7 @@ Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: "Download song
          if (!link) return await message.client.sendMessage(message.jid, '```Give me a link```',MessageType.text)
     
         await axios
-          .get(`https://lolhuman.herokuapp.com/api/spotify?apikey=queenamdipublic&url=${link}`)
+          .get(`https://api.lolhuman.xyz/api/spotify?apikey=queenamdipublic&query=${match}`)
           .then(async (response) => {
             const {
               link,
