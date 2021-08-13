@@ -3,7 +3,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const read = require('../config');
 
-Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, desc: "Download video from tik tok" },  deleteCommand: false}, (async (message, match) => {
+Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, desc: "Download video from tik tok" }, (async (message, match) => {
     
      const tkurl = match[1]
     
