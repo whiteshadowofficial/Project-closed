@@ -9,13 +9,14 @@ Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: "Download song
 
         const link = match[1]
     
-         if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a link```',MessageType.text)
+         if (!link) return await message.client.sendMessage(message.jid, '```Give me a link```',MessageType.text)
     
         await axios
           .get(`https://api.lolhuman.xyz/api/spotify?apikey=qamdi5652&url=${link}`)
           .then(async (response) => {
             const {
               link,
+              title,
             } = response.data.result
             
             await message.client.sendMessage(message.jid, '```Downloading pls wait.```', MessageType.text);
