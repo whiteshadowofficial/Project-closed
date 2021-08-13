@@ -5,6 +5,7 @@ const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const { errorMessage, infoMessage } = require('../helpers');
 const Config = require('../config');
+const Lang = Language.getString('spotify');
 
 Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: "Download song from spotify" }, (async (message, match) => {
 
@@ -13,7 +14,7 @@ Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: "Download song
          if (!link) return await message.client.sendMessage(message.jid, '```Give me a link```',MessageType.text)
     
         await axios
-          .get(`https://api.lolhuman.xyz/api/spotify?apikey=queenamdipublic&query=${match}`)
+          .get(`https://api.lolhuman.xyz/api/spotify?apikey=queenamdipublic&url=${link}`)
           .then(async (response) => {
             const {
               link,
