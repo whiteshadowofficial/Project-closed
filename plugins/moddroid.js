@@ -15,7 +15,7 @@ Asena.addCommand({ pattern: 'mod ?(.*)', fromMe: false, desc: "Finds mod verssio
     if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a app name.```', MessageType.text, { quoted: message.data });
     var reply = await message.client.sendMessage(message.jid, '```searching```', MessageType.text, {quoted: message.data});
     
-    get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/moddroid?apikey=queenamdipublic&query=${match[1]}`)
+    get_result = await fetchJson(`https://api.lolhuman.xyz/api/moddroid?apikey=queenamdipublic&query=${match[1]}`)
                     get_result = get_result.result
                     ini_txt = "" 
                     for (var x of get_result) {
