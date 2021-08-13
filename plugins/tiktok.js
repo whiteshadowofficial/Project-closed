@@ -28,4 +28,4 @@ Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, desc: "Download video 
           await message.client.sendMessage(message.jid, '```Uploading yor video```',MessageType.text, {quoted: message.data});
           await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video);
             
-}));
+});
