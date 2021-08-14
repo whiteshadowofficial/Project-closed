@@ -14,7 +14,7 @@ const Lang = Language.getString('AsenaPlug');
 
 if (Config.WORKTYPE == 'private') {
     
-	Asena.addCommand({pattern: 'francy ?(.*)', fromMe: true, desc: DC,  deleteCommand: false}, async (message, match) => {
+	Asena.addCommand({pattern: 'fancy ?(.*)', fromMe: true, desc: DC,  deleteCommand: false}, async (message, match) => {
 	if (match[1] === '') return await message.sendMessage(need);
         const url = `https://${Config.HLOCK}.herokuapp.com/api/font?teks=${match[1]}`;
         const url1 = `https://${Config.HLOCK}.herokuapp.com/api/font2?teks=${match[1]}`;
@@ -33,7 +33,7 @@ if (Config.WORKTYPE == 'private') {
 }
 
 else if (Config.WORKTYPE == 'public') {
-    Asena.addCommand({pattern: 'francy ?(.*)', fromMe: false, desc: DC}, async (message, match) => {
+    Asena.addCommand({pattern: 'fancy ?(.*)', fromMe: false, desc: DC}, async (message, match) => {
         if (match[1] === '') return await message.sendMessage(need);
         const url = `https://${Config.HLOCK}.herokuapp.com/api/font?teks=${match[1]}`;
         const url1 = `https://${Config.HLOCK}.herokuapp.com/api/font2?teks=${match[1]}`;
