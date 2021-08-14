@@ -58,6 +58,7 @@ module.exports = {
     CCN: "Ikyy69",
     ON: "hunter",
     TH: "THEVINDUapi",
+    HLOCK: "hadi-api",
     ZTH: "d537895142",
     XT: "62203531b66c44b4",
     DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
