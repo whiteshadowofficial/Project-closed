@@ -986,7 +986,6 @@ else if (config.WORKTYPE == 'public') {
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);
-        await reply.delete();
     }));
 
     Asena.addCommand({pattern: 'wiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
