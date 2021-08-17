@@ -31,7 +31,7 @@ const { errorMessage, infoMessage } = require('../helpers');
 	} catch {
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDS, MessageType.text);
 	}
-});*/
+});
 
 
 Asena.addCommand({ pattern: 'joox ?(.*)', fromMe: false, dontAddCommandList: true}, async (message, match) => {
@@ -133,7 +133,7 @@ Asena.addCommand({ pattern: 'twt ?(.*)', fromMe: false,  dontAddCommandList: tru
         async (err) => await message.sendMessage(errorMessage("Error" )),
       )
   },
-)
+)*/
 
 
 
