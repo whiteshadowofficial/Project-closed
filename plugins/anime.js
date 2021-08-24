@@ -112,7 +112,7 @@ else if (Config.WORKTYPE == 'public') {
     
     }));
 
-    Asena.addCommand({ pattern: 'animelist ?(.*)', fromMe: false, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,ANIME, MessageType.text, contextInfo: { forwardingScore: 1000});
+    Asena.addCommand({ pattern: 'animelist ?(.*)', fromMe: false, deleteCommand: false, desc: Ln,}, (async (message, match) => {await message.client.sendMessage(message.jid,ANIME, MessageType.text);
 
     }));
 
