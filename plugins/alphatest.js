@@ -1,4 +1,4 @@
-const WhatsAlexa = require('../events');
+const Asena = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 
@@ -8,7 +8,7 @@ const fs = require("fs")
 
 if (Config.WORKTYPE == 'private') {
 
-    WhatsAlexa.addCommand({pattern: 'list ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'list ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -17,7 +17,7 @@ if (Config.WORKTYPE == 'private') {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-             WhatsAlexa.commands.map(
+             Asena.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
                 return;
             }
             var CMD_HELP = '';
-             WhatsAlexa.commands.map(
+             Asena.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -83,7 +83,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    WhatsAlexa.addCommand({pattern: 'list ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'list ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -92,7 +92,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-             WhatsAlexa.commands.map(
+             Asena.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -124,7 +124,7 @@ else if (Config.WORKTYPE == 'public') {
                 return;
             }
             var CMD_HELP = '';
-             WhatsAlexa.commands.map(
+             Asena.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
