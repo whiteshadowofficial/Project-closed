@@ -167,8 +167,7 @@ else if (Config.WORKTYPE == 'public') {
                     }
                 }
             );
-            await message.client.sendMessage(message.jid,'\n╭─ ★ ᴀʟᴘͥʜͭᴀᷤ ʙͫᴏͤᴛ ★\n ┝「  '+Config.MENUTEXT+' 」\n ```┝ Commands```\n\n' + CMD_HELP, MessageType.text
-            );
+            await message.client.sendMessage(message.jid,'\n╭─ ★ ᴀʟᴘͥʜͭᴀᷤ ʙͫᴏͤᴛ ★\n ┝「  '+Config.MENUTEXT+' 」\n ```┝ Commands```\n\n' + CMD_HELP, MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data});
         } else {
             var CMD_HELP = '';
             Asena.commands.map(
