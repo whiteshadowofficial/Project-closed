@@ -943,7 +943,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid, 'ᴜᴘʟᴏᴀᴅɪɴɢ   ʏᴏᴜʀ sᴏɴɢ [' + title + ']•𝚖𝚙3 & •𝚖𝚊4  ⌲', MessageType.text);
+                reply = await message.client.sendMessage(message.jid, 'ᴜᴘʟᴏᴀᴅɪɴɢ   ʏᴏᴜʀ sᴏɴɢ [' + title + ']•𝚖𝚙3 & •𝚖4𝚊  ⌲', MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data});
 
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data, ptt: false});
