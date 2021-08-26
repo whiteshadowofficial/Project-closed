@@ -15,7 +15,7 @@ const fs = require("fs")
 
 if (Config.WORKTYPE == 'private') {
 
-    Amdi.applyCMD({pattern: 'asena ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Asena.applyCMD({pattern: 'test ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -24,7 +24,7 @@ if (Config.WORKTYPE == 'private') {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-            Amdi.commands.map(
+            Asena.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -48,7 +48,7 @@ if (Config.WORKTYPE == 'private') {
                 }
             );
         
-            await message.client.sendMessage(message.jid, '● Whatsasena Public ●\n\n' + CMD_HELP, MessageType.text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "●Whatsasena Public●", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./media/LOGO.jpg')}}}});  
+            await message.client.sendMessage(message.jid, '● Whatsasena Public ●\n\n' + CMD_HELP, MessageType.text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "●Whatsasena Public●", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./media/gif/85176770.jpg')}}}});  
         } else {
 
             if (message.jid === '393475528094-1415817281@g.us') {
@@ -56,7 +56,7 @@ if (Config.WORKTYPE == 'private') {
                 return;
             }
             var CMD_HELP = '';
-            Amdi.commands.map(
+            Asena.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -90,7 +90,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Amdi.applyCMD({pattern: 'asena ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.applyCMD({pattern: 'test ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -99,7 +99,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-            Amdi.commands.map(
+            Asena.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -123,7 +123,7 @@ else if (Config.WORKTYPE == 'public') {
                 }
             );
         
-            await message.client.sendMessage(message.jid, '● Whatsasena Public ●\n\n' + CMD_HELP, MessageType.text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "●Whatsasena Public●", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./media/LOGO.jpg')}}}});   
+            await message.client.sendMessage(message.jid, '● Whatsasena Public ●\n\n' + CMD_HELP, MessageType.text, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "●Whatsasena Public●", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./media/gif/85176770.jpg')}}}});   
         } else {
 
             if (message.jid === '393475528094-1415817281@g.us') {
@@ -131,7 +131,7 @@ else if (Config.WORKTYPE == 'public') {
                 return;
             }
             var CMD_HELP = '';
-            Amdi.commands.map(
+            Asena.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
