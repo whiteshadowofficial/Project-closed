@@ -408,4 +408,14 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: Config.AFN})
 
     }));
+
+    Asena.addCommand({pattern: 'pinky ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+
+    var webimage = await axios.get(`https://api.xteam.xyz/textpro/freeadvancedglow?text[1]}&APIKEY=65654c74a7169de8`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: Config.AFN})
+
+    }));
 }
