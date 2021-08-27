@@ -409,7 +409,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-    Asena.addCommand({pattern: 'pinky ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+/*    Asena.addCommand({pattern: 'pinky ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
 
@@ -418,4 +418,5 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: Config.AFN})
 
     }));
+*/
 }
