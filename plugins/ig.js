@@ -37,7 +37,7 @@ else if (Config.WORKTYPE == 'public') {
       let { data, type } = await instaGram(match[1], '07d6782b83a82b05');
   //if(match[1] == '') return 
       if (type === 'image') { await message.sendMessage(data, MessageType.image,{contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data,},{ caption: Config.CAPTION_KEY )}
-      else if (type === 'video') { await message.sendMessage(data, MessageType.video, {contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data},{ caption: Config.CAPTION_KEY ) }
+      else if (type === 'video') { await message.sendMessage(data, MessageType.video, {contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data},{ caption: Config.CAPTION_KEY }) }
   });
   //const axios = require('axios')
   async function instaGram(url, key){
