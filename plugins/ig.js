@@ -1,8 +1,8 @@
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
-const IG_DESC = "Downloads Image/Video From Instagram"
-const LOAD_ING = "```Downloading media```"
+const IG_DESC = "ᴅᴏᴡɴʟᴏᴀᴅᴀ ᴠɪᴅᴇᴏ / ɪᴍᴀɢᴇ ғʀᴏᴍ ɪɴsᴛᴀɢʀᴀᴍ"
+const LOAD_ING = "ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ"
 const Config = require('../config');
 
 const Language = require('../language');
