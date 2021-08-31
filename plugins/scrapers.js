@@ -913,12 +913,8 @@ else if (config.WORKTYPE == 'public') {
             voice: LANG
         });
         var alpha = await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
-            key: {
-                remoteJid: message.reply_message.jid,
-                id: message.reply_message.id
-                 },
-            message: message.reply_message.data.quotedMessage});
-    }));
+
+        }));
 
     Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
