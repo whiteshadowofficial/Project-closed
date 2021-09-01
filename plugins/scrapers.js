@@ -913,9 +913,9 @@ else if (config.WORKTYPE == 'public') {
             voice: LANG
         });
         var alpha = await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
-        key: {remoteJid: message.reply_message.jid, id: message.reply_message.id}, message: message.reply_message.data.quotedMessage});
+        key: {remoteJid: message.reply_message.jid, message.reply_message.id}, message: message.reply_message.data.quotedMessage});
         await new Promise(r => setTimeout(r, 60000));
-        return await message.client.deleteMessage(message.jid, {id: alpha.key.id, remoteJid: message.jid, fromMe: true})
+        return await message.client.deleteMessage(message.jid, {message.reply_message.id: alpha.key.id, remoteJid: message.jid, fromMe: true})
         }));
 
     Asena.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
