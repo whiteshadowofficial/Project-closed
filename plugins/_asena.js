@@ -15,7 +15,7 @@ const fs = require("fs")
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'alpha ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'help ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
@@ -90,7 +90,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'alpha ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'help ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         if (message.jid === '393475528094-1415817281@g.us') {
 
