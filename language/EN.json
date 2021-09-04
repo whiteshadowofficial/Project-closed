@@ -11,6 +11,20 @@
             "NOT_FOUND": "*I couldnt find a command like this*",
             "WARN": "Warn"
         },
+        "_list": {
+            "COMMAND": "Command",
+            "DESC": "Description",
+            "EXAMPLE": "Example",
+            "NOT_FOUND": "*I couldnt find a command like this*",
+            "WARN": "Warn"
+        },
+        "_menu": {
+            "COMMAND": "Command",
+            "DESC": "Description",
+            "EXAMPLE": "Example",
+            "NOT_FOUND": "*I couldnt find a command like this*",
+            "WARN": "Warn"
+        },
         "_plugin": {
             "INSTALL_DESC": "Install external plugins.",
             "NEED_URL": "Please enter a URL! Example:",
@@ -185,10 +199,10 @@
             "SONG_DESC": "Uploads the song you wrote.",
             "NEED_TEXT_SONG": "*oru song name thado!*\n*Example:* ```.song 𝚜𝚊𝚡𝚘 𝚋𝚎𝚊𝚝```",
             "NO_RESULT": "*I couldn't find anything :(*",
-            "DOWNLOADING_SONG": "ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ   ⎙",
-            "UPLOADING_SONG": "ᴜᴘʟᴏᴀᴅɪɴɢ   ⌲ •𝚖𝚙3 & •𝚖𝚊4",
+            "DOWNLOADING_SONG": "\n\n*Searching 🥰*\nᴅᴏᴡɴʟᴏᴀᴅɪɴɢ   ⎙\n\n",
+            "UPLOADING_SONG": "\n*0:35 ━❍──────── -5:32*\n*↻    ⊲    Ⅱ    ⊳     ↺*\n\n*feel the music 🎧*\n\n*ᴜᴘʟᴏᴀᴅɪɴɢ   ⌲ •𝚖𝚙3 & •𝚖𝚊4*",
             "VIDEO_DESC": "Downloads video from YouTube.",
-            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
+            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=iNZSYr2u7Cc&t=2s```",
             "DOWNLOADING_VIDEO": "```LOADING......```",
             "UPLOADING_VIDEO": "```██████████████]99% Uploading...```",
             "YT_DESC": "It searchs on YouTube.",
