@@ -200,7 +200,7 @@
             "NEED_TEXT_SONG": "*oru song name thado!*\n*Example:* ```.song 𝚜𝚊𝚡𝚘 𝚋𝚎𝚊𝚝```",
             "NO_RESULT": "*I couldn't find anything :(*",
             "DOWNLOADING_SONG": "\n\n*Searching 🥰*\n*&*\n*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ   ⎙*\n\n",
-            "UPLOADING_SONG": "\n*feel the music 🎧\n",
+            "UPLOADING_SONG": "\n*0:35 ━❍──────── -5:32*\n*↻    ⊲    Ⅱ    ⊳     ↺*\n\n*feel the music 🎧*\n",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=iNZSYr2u7Cc&t=2s```",
             "DOWNLOADING_VIDEO": "```LOADING......```",
