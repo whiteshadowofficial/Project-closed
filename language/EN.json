@@ -4,7 +4,7 @@
     "LANGCODE": "en",
     "AUTHOR": "AsenaDev",
     "STRINGS": {
-        "_asena": {
+        "_help": {
             "COMMAND": "Alpha Cmd",
             "DESC": "Des",
             "EXAMPLE": "Eg",
