@@ -6,25 +6,25 @@ WhatsAsena - Yusuf Usta
 */
 const ss = (`Have a Nice Day 💖
 
-Thank You For using Alpha  💕
-*WhatsAlexa, Made By Subadra Poshitha*`);
+Thank You For using stefanie  💕
+*WhatsAlexa, Made By VIRUS_FUCKER*`);
 const ll =(`
 *◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*
-  *⦁◊═⦁ Alpha Bot ⦁═◊⦁*
+  *⦁◊═⦁ *'+Config.BOT_NAME+'* ⦁═◊⦁*
 *◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*
 
 *◆ BOT INFO ◆*
 
 ▣ Developer:
-*Subadra Poshitha*
+*VIRUS_FUCKER*
 ▣ Owner:
-*Dark Ezio*
+*'+Config.OWNER_NAME+'*
 ▣ Contact Owner:
-*wa.me/94781564565*
+*'+Config.OWNER_NUMBER+'*
 ▣ Language:
 *English*
 ▣ Work Type:
-*public*`);
+*'+Config.WORK_TYPE+'*`);
 
 const Asena = require('../events');
 const Config = require('../config');
