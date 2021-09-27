@@ -1,1 +1,1 @@
-## bot closed ක්‍රියාත්මක නොවේ
+## heroku.com/deploy?template=https://github.com/xmain12/Alpha_V1
