@@ -10,7 +10,7 @@ Thank You For using stefanie  💕
 *WhatsAlexa, Made By VIRUS_FUCKER*`);
 const ll =(`
 *◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*
-  *⦁◊═⦁ *'+Config.BOT_NAME+'* ⦁═◊⦁*
+  *⦁◊═⦁ *' + Config.BOT_NAME + '* ⦁═◊⦁*
 *◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*
 
 *◆ BOT INFO ◆*
