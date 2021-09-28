@@ -245,7 +245,7 @@
         },
         "updater": {
             "UPDATER_DESC": "Checks the update.",
-            "UPDATE": "*Your alpha is completely up-to-date !*",
+            "UPDATE": "*Your stefanie is completely up-to-date !*",
             "NEW_UPDATE": "*New update available for Bot!*\n\nChanges:\n```",
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "```Updating...😴```",
