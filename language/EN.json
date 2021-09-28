@@ -5,30 +5,30 @@
     "AUTHOR": "AsenaDev",
     "STRINGS": {
         "_help": {
-            "COMMAND": "Alpha Cmd",
-            "DESC": "Des",
-            "EXAMPLE": "Eg",
+            "COMMAND": "Command",
+            "DESC": "Description",
+            "EXAMPLE": "Example",
             "NOT_FOUND": "*I couldnt find a command like this*",
             "WARN": "Warn"
         },
         "_list": {
-            "COMMAND": "Alpha Cmd",
-            "DESC": "Des",
-            "EXAMPLE": "Eg",
+            "COMMAND": "Command",
+            "DESC": "Description",
+            "EXAMPLE": "Example",
             "NOT_FOUND": "*I couldnt find a command like this*",
             "WARN": "Warn"
         },
         "_menu": {
-            "COMMAND": "Alpha Cmd",
-            "DESC": "Des",
-            "EXAMPLE": "Eg",
+            "COMMAND": "Command",
+            "DESC": "Description",
+            "EXAMPLE": "Example",
             "NOT_FOUND": "*I couldnt find a command like this*",
             "WARN": "Warn"
         },
         "_alpha": {
-            "COMMAND": "Alpha Cmd",
-            "DESC": "Des",
-            "EXAMPLE": "Eg",
+            "COMMAND": "Command",
+            "DESC": "Description",
+            "EXAMPLE": "Example",
             "NOT_FOUND": "*I couldnt find a command like this*",
             "WARN": "Warn"
         },
