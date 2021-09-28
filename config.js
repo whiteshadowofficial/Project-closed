@@ -27,7 +27,7 @@ module.exports = {
     SESSION: process.env.ASENA_SESSION === undefined ? '' : process.env.ASENA_SESSION,
     CAPTION_KEY: process.env.CP === undefined ? '👸stefanie👸' : process.env.CP,
     OWNER_NAME: process.env.OWNER_NAME === undefined ? 'Kaweesha Chamod' : process.env.OWNER_NAME,
-    OWNERNUMBER: process.env.OWNER_NUMBER === undefined ? '94779529221' : process.env.OWNER_NUMBER,
+    OWNER_NUMBER: process.env.OWNER_NUMBER === undefined ? '94779529221' : process.env.OWNER_NUMBER,
     BOT_NAME: process.env.BOT_NAME === undefined ? '👸 Stefanie 👸' : process.env.BOT_NAME,
     INBOX_BLOCK: process.env.INBOX_BLOCK === undefined ?'false' : process.env.INBOX_BLOCK,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://telegra.ph/file/0edc0f3917fde20a7990a.jpg' : process.env.ALIVE_LOGO,
