@@ -83,20 +83,20 @@ if (config.LANG == 'AZ') {
     dlang_input = 'İşlənmiş Mətn:'
 }
 if (config.LANG == 'ML') {
-    dlang_dsc = 'മറുപടി നൽകിയ സന്ദേശത്തിന്റെ ഭാഷ ess ഹിക്കുക.'
-    closer_res = 'ഏറ്റവും അടുത്ത ഫലം:'
+    dlang_dsc = 'മറുപടി നൽകി�? സന്ദേശത്തിന്റെ ഭാ�? ess ഹിക്കു�?.'
+    closer_res = 'ഏറ്റവു�? അടുത്ത ഫല�?:'
     dlang_lang = 'നാവ്:'
-    dlang_similarity = 'സമാനത:'
-    dlang_other = 'മറ്റ് ഭാഷകൾ'
-    dlang_input = 'പ്രോസസ്സ് ചെയ്ത വാചകം:'
+    dlang_similarity = 'സമാന�?:'
+    dlang_other = 'മറ്റ�? ഭാഷക�?'
+    dlang_input = 'പ്രോസസ്സ�? ചെയ്�? വാചക�?:'
 }
 if (config.LANG == 'HI') {
-    dlang_dsc = 'उत्तर दिए गए संदेश की भाषा का अनुमान लगाएं'
+    dlang_dsc = 'उत्त�? दि�? गए संदे�? की भाषा का अनुमान लगाए�?'
     closer_res = 'निकटतम परिणाम:'
-    dlang_lang = 'जुबान:'
+    dlang_lang = 'जुबा�?:'
     dlang_similarity = 'समानता:'
     dlang_other = 'अन्य भाषाएँ'
-    dlang_input = 'संसाधित पाठ:'
+    dlang_input = 'संसाधि�? पा�?:'
 }
 if (config.LANG == 'ES') {
     dlang_dsc = 'Adivina el idioma del mensaje respondido.'
@@ -143,7 +143,7 @@ if (config.WORKTYPE == 'private') {
         ceviri = await translatte(message.reply_message.message, {from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2]});
         if ('text' in ceviri) {
             return await message.reply('*▶️ ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
-            + '*◀️ ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
+            + '*◀�? ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
             + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
             return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text)
@@ -176,18 +176,18 @@ if (config.WORKTYPE == 'private') {
         succ_off = 'Antilink Uğurla Bağlandı!'
     }
     if (config.LANG == 'HI') {
-        l_dsc = 'एंटीलिंक टूल को सक्रिय करता है।'
+        l_dsc = 'एंटीलिंक टू�? को सक्रिय करता है�?'
         alr_on = 'एंटीलिंक पहले से ही खुला है!'
-        alr_off = 'एंटीलिंक वर्तमान में बंद है!'
-        succ_on = 'एंटीलिंक सफलतापूर्वक खोला गया!'
-        succ_off = 'एंटीलिंक सफलतापूर्वक बंद!'
+        alr_off = 'एंटीलिंक वर्तमा�? मे�? बं�? है!'
+        succ_on = 'एंटीलिंक सफलतापूर्व�? खोला गय�?!'
+        succ_off = 'एंटीलिंक सफलतापूर्व�? बं�?!'
     }
     if (config.LANG == 'ML') {
-        l_dsc = 'ആന്റിലിങ്ക് ഉപകരണം സജീവമാക്കുന്നു.'
-        alr_on = 'ആന്റിലിങ്ക് ഇതിനകം തുറന്നു!'
-        alr_off = 'ആന്റിലിങ്ക് നിലവിൽ അടച്ചിരിക്കുന്നു!'
-        succ_on = 'ആന്റിലിങ്ക് വിജയകരമായി തുറന്നു!'
-        succ_off = 'ആന്റിലിങ്ക് വിജയകരമായി അടച്ചു!'
+        l_dsc = 'ആന്റിലിങ്ക�? ഉപകരണം സജീവമാക്കുന്ന�?.'
+        alr_on = 'ആന്റിലിങ്ക�? ഇതിനകം തുറന്ന�?!'
+        alr_off = 'ആന്റിലിങ്ക�? നിലവിൽ അടച്ചിരിക്കുന്നു!'
+        succ_on = 'ആന്റിലിങ്ക�? വിജയകരമായി തുറന്ന�?!'
+        succ_off = 'ആന്റിലിങ്ക�? വിജയകരമായി അടച്ചു!'
     }
     if (config.LANG == 'PT') {
         l_dsc = 'Ativa a ferramenta Antilink.'
@@ -273,17 +273,17 @@ if (config.WORKTYPE == 'private') {
         succ_off_bio = 'Autobio Uğurla Bağlandı!'
     }
     if (config.LANG == 'HI') {
-        auto_dsc = 'अपने बायो में लाइव घड़ी जोड़ें!'
+        auto_dsc = 'अपने बायो मे�? लाइव घड़ी जोड़ें!'
         alr_on_bio = 'Autobio पहले से ही खुला है!'
-        alr_off_bio = 'Autobio वर्तमान में बंद है!'
-        succ_on_bio = 'Autobio सफलतापूर्वक खोला गया!'
-        succ_off_bio = 'Autobio सफलतापूर्वक बंद!'
+        alr_off_bio = 'Autobio वर्तमा�? मे�? बं�? है!'
+        succ_on_bio = 'Autobio सफलतापूर्व�? खोला गय�?!'
+        succ_off_bio = 'Autobio सफलतापूर्व�? बं�?!'
     }
     if (config.LANG == 'ML') {
-        auto_dsc = 'നിങ്ങളുടെ ബയോയിലേക്ക് തത്സമയ ക്ലോക്ക് ചേർക്കുക!'
-        alr_on_bio = 'Autobio ഇതിനകം തുറന്നു!'
+        auto_dsc = 'നിങ്ങളുട�? ബയോയിലേക്ക�? തത്സമയ ക്ലോക്ക് ചേർക്കുക!'
+        alr_on_bio = 'Autobio ഇതിനകം തുറന്ന�?!'
         alr_off_bio = 'Autobio നിലവിൽ അടച്ചിരിക്കുന്നു!'
-        succ_on_bio = 'Autobio വിജയകരമായി തുറന്നു!'
+        succ_on_bio = 'Autobio വിജയകരമായി തുറന്ന�?!'
         succ_off_bio = 'Autobio വിജയകരമായി അടച്ചു!'
     }
     if (config.LANG == 'PT') {
@@ -696,7 +696,7 @@ if (config.WORKTYPE == 'private') {
             try{
                 const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/India").then(async ok  => {
                     resp = JSON.parse(ok.body);
-                    await message.reply(`🇮🇳 *भारत के लिए डेटा:*\n😷 *कुल मामले:* ${resp.cases}\n🏥 *दैनिक मामले:* ${resp.todayCases}\n⚰️ *कुल मौतें:* ${resp.deaths}\n☠️ *रोज की मौत:* ${resp.todayDeaths}\n💊 *कुल बरामद:* ${resp.recovered}\n😷 *एक्टिव केस:* ${resp.active}\n🆘 *गंभीर मामले:* ${resp.critical}\n🧪 *कुल टेस्ट:* ${resp.totalTests}`);
+                    await message.reply(`🇮🇳 *भारत के लि�? डेटा:*\n😷 *कु�? मामल�?:* ${resp.cases}\n🏥 *दैनि�? मामल�?:* ${resp.todayCases}\n⚰️ *कु�? मौते�?:* ${resp.deaths}\n☠️ *रो�? की मौ�?:* ${resp.todayDeaths}\n💊 *कु�? बराम�?:* ${resp.recovered}\n😷 *एक्टिव के�?:* ${resp.active}\n🆘 *गंभी�? मामल�?:* ${resp.critical}\n🧪 *कु�? टेस्�?:* ${resp.totalTests}`);
 
                 });
 
@@ -833,7 +833,7 @@ else if (config.WORKTYPE == 'public') {
         ceviri = await translatte(message.reply_message.message, {from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2]});
         if ('text' in ceviri) {
             return await message.reply('*▶️ ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
-            + '*◀️ ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
+            + '*◀�? ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
             + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
             return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text)
@@ -945,10 +945,10 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid, fs.readFileSync('./' + title + '.jpg'), MessageType.image, {caption: '♪ ɴᴀᴍᴇ :  ```' + title + '```\n\n »» [ ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ sᴏɴɢ ]««\n\n »» [ ᴛʏᴘᴇ: •ᴍᴘ𝟹 & •ᴍʀᴀ ]\n\n' });
+                reply = await message.client.sendMessage(message.jid, fs.readFileSync('./' + title + '.jpg'), MessageType.image, {caption: '�? ɴᴀᴍᴇ :  ```' + title + '```\n\n »» [ ᴜᴘʟᴏᴀᴅɪɴ�? ʏᴏᴜʀ sᴏɴ�? ]««\n\n »» [ ᴛʏᴘ�?: •ᴍᴘ�? & •ᴍʀᴀ ]\n\n' });
                 await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data});
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data, ptt: false});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "?��������������?? Stefanie Menu ??����������������?", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./src/image/Stefanie.png')}}}});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(message.jid ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "?��������������?? Stefanie Menu ??����������������?", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('./src/image/Stefanie.png')}}}});
             });
     }));
 
@@ -986,7 +986,7 @@ else if (config.WORKTYPE == 'public') {
     
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '```◇' + video.title + '``` ⇆ ' + video.url + '\n\n'
+            mesaj += '```�?' + video.title + '``` �? ' + video.url + '\n\n'
         });
 
         await message.client.sendMessage(message.jid,mesaj,MessageType.text);
@@ -1160,7 +1160,7 @@ else if (config.WORKTYPE == 'public') {
             try{
                 const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/India").then(async ok  => {
                     resp = JSON.parse(ok.body);
-                    await message.reply(`🇮🇳 *भारत के लिए डेटा:*\n😷 *कुल मामले:* ${resp.cases}\n🏥 *दैनिक मामले:* ${resp.todayCases}\n⚰️ *कुल मौतें:* ${resp.deaths}\n☠️ *रोज की मौत:* ${resp.todayDeaths}\n💊 *कुल बरामद:* ${resp.recovered}\n😷 *एक्टिव केस:* ${resp.active}\n🆘 *गंभीर मामले:* ${resp.critical}\n🧪 *कुल टेस्ट:* ${resp.totalTests}`);
+                    await message.reply(`🇮🇳 *भारत के लि�? डेटा:*\n😷 *कु�? मामल�?:* ${resp.cases}\n🏥 *दैनि�? मामल�?:* ${resp.todayCases}\n⚰️ *कु�? मौते�?:* ${resp.deaths}\n☠️ *रो�? की मौ�?:* ${resp.todayDeaths}\n💊 *कु�? बराम�?:* ${resp.recovered}\n😷 *एक्टिव के�?:* ${resp.active}\n🆘 *गंभी�? मामल�?:* ${resp.critical}\n🧪 *कु�? टेस्�?:* ${resp.totalTests}`);
 
                 });
 
