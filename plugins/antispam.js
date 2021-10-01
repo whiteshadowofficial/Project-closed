@@ -4,10 +4,10 @@ const {MessageType} = require('@adiwajshing/baileys');
 
 const Ln = ('This command for any emergency situation about any kind of WhatsApp SPAM in Group');
 
-const code = ('A\nɴ\nᴛ\nɪ\ns\nᴘ\nᴀ\nᴍ\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*ALPHA*')
+const code = ('A\nɴ\nᴛ\nɪ\ns\nᴘ\nᴀ\nᴍ\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*👸Stefanie👸*')
 const FINAL = "THIS IS AN ANTISAPM (anti lag),\nThis code prevents your phone from getting stuck due to malicious messages"
 const TMUTE = "Trying to close temporary,\nAttempting to temporarily close the group"
-const MUT = ".mute 1m"
+const MUT = ".closegc 50m"
 const SCXR = "Running script...."
 Asena.addCommand({pattern: 'antispm', fromMe: true, deleteCommand: false, desc: Ln,}, (async (message, match) => {
 
