@@ -25,7 +25,7 @@
             "NOT_FOUND": "*I couldnt find a command like this*",
             "WARN": "Warn"
         },
-        "_alpha": {
+        "_stefanie": {
             "COMMAND": "Command",
             "DESC": "Description",
             "EXAMPLE": "Example",
