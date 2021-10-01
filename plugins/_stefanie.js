@@ -4,7 +4,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 WhatsAsena - Yusuf Usta
 */
-const ss = (`Have a Nice Day 💖
+const ss = (`'Have a Nice Day 💖
 
 Thank You For using stefanie  💕
 *WhatsAlexa, Made By VIRUS_FUCKER*`);
@@ -24,7 +24,7 @@ const ll =(`
 ▣ Language:
 *English*
 ▣ Work Type:
-*'+Config.WORK_TYPE+'*`);
+*'+Config.WORK_TYPE+'*'`);
 
 const Asena = require('../events');
 const Config = require('../config');
