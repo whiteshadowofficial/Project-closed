@@ -3,7 +3,7 @@ let Config = require('../config');
 let fs = require('fs');
 let {MessageType} = require('@adiwajshing/baileys');
 let Language = require('../language');
-let Lang = Language.getString('_list');
+let Lang = Language.getString('list');
 let td = Config.WORKTYPE == 'public' ? false : true
 let hrs = new Date().getHours()
 
