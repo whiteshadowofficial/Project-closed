@@ -7,7 +7,7 @@
         "_help": {
             "COMMAND": "Command",
             "DESC": "Description",
-            "EXAMPLE": "Example",
+            "EXAMPLE": "Example=",
             "NOT_FOUND": "*I couldnt find a command like this*",
             "WARN": "Warn"
         },
