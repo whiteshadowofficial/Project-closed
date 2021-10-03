@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'private') {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```💕 Hey Bro!! I am still alive & kicking 😙```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n\n*Developer:* Kaweesha Chamod\n\n*Git :* https://github.com/Kaweeshachamodk/Stefanie_.git\n\n```💕 Copyright © 2021 💞\n Also Feel free to contribute & issue ( report issues & feature request on issue session of the ropo ).. ( https://kaweeshachamodk.github.io/Stefanie_/ ) 🙂❤️```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```💕 Hey Bro!! I am still alive & kicking 😙```\n\n*✅Version :► 8.2 (Public Release)*\n*✅Branch  :► Main*\n*✅Developer :► Virus Fucker*\n*✅About :► Stefanie Is a Powerfull Bot For Whatsapp.*\n*✅Github Link :►https://tinyurl.com/yz3437mp*\n\n*💫©Join Our Group*\n*▷📑News & Update Report*\n_◈https://chat.whatsapp.com/KlpSnFrspoaEu2kRrjx8v4*\n▷⚡Official Pluggins Group* \n ◈https://chat.whatsapp.com/BnjLaEOiiruJ6m1Rz4V04p*\n\n```💕 Copyright © 2021 💞\n Also Feel free to contribute & issue ( report issues & feature request on issue session of the ropo ).. ( https://kaweeshachamodk.github.io/STEFANIE-V5.2 BETA_/ ) 🙂❤️```"})
 
     }
     else {
@@ -59,7 +59,7 @@ else if (Config.WORKTYPE == 'public') {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```💕 Hey Bro!! I am still alive & kicking 😙```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n\n*Developer:* Kaweesha Chamod\n\n*Git :* https://github.com/Kaweeshachamodk/Stefanie_.git\n\n```💕 Copyright © 2021 💞\n Also Feel free to contribute & issue ( report issues & feature request on issue session of the ropo ).. ( https://kaweeshachamodk.github.io/Stefanie_/ ) 🙂❤️```"})
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: "```💕 Hey Bro!! I am still alive & kicking 😙```\n\n*✅Version :► 8.2 (Public Release)*\n*✅Branch  :► Main*\n*✅Developer :► Virus Fucker*\n*✅About :► Stefanie Is a Powerfull Bot For Whatsapp.*\n*✅Github Link :►https://tinyurl.com/yz3437mp*\n\n*💫©Join Our Group*\n*▷📑News & Update Report*\n_◈https://chat.whatsapp.com/KlpSnFrspoaEu2kRrjx8v4*\n▷⚡Official Pluggins Group* \n ◈https://chat.whatsapp.com/BnjLaEOiiruJ6m1Rz4V04p*\n\n```💕 Copyright © 2021 💞\n Also Feel free to contribute & issue ( report issues & feature request on issue session of the ropo ).. ( https://kaweeshachamodk.github.io/STEFANIE-V5.2 BETA_/ ) 🙂❤️```"})
 
     }
     else {
