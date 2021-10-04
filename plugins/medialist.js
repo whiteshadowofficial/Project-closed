@@ -16,7 +16,7 @@ Neotro.addCommand({pattern: 'textimage', fromMe: fs, desc: Lang.ALIST}, (async (
 
 }));
 
-Neotro.addCommand({pattern: 'listtp', fromMe: fs, desc: Lang.BLIST}, (async (message, match) => {
+Neotro.addCommand({pattern: 'littp', fromMe: fs, desc: Lang.BLIST}, (async (message, match) => {
     await message.sendMessage("*👸Stefanie bot TTP list*\n\n╔══════════▷\n*╠📑: .tblue < your Text>*\n*╠📑: .tyellow < your Text>*\n*╠📑: .tgreen< your Text>*\n*╠📑: .tpink < your Text>*\n*╠📑: .tpurple < your Text>*\n*╠📑: .tred < your Text>*\n*╠📑: .tblack < your Text>*\n*╠📑: .tbrown < your Text>*\n╠📑: .tpurple < your text>\n╚══════════▷");
 
 }));
