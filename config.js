@@ -63,6 +63,7 @@ module.exports = {
     PLKS: process.env.THERI_LIST === undefined ? false : process.env.THERI_LIST,
     ALL: process.env.ALL_CAPTION === undefined ? 'Made By JulieMwol' : process.env.ALL_CAPTION,
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
+    PLKBGM: process.env.CHANGE_BGM_TO === undefined ? 'one' : process.env.CHANGE_BGM_TO,
     STICKERP: process.env.AUTO_STICKER === undefined ? true : convertToBool(process.env.AUTO_STICKER),
     DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
     DEMOTEMSG: process.env.DEMOTE_MESSAGE === undefined ? 'default' : process.env.DEMOTE_MESSAGE,
