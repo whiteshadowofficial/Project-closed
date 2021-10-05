@@ -1,2 +1,2 @@
-## bot was crashed .
+## bot was crashed 😔
 ## eroo found☹
