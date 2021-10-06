@@ -1,7 +1,5 @@
-/*RAVANA 2021|*/
-
 const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
-const RAVANA = require('../events');
+const Asena = require('../events');
 const Config = require('../config');
 const UNQ = "wrong command dont type words after command"
 const DDO = "turn on disappering mode"
@@ -19,7 +17,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-RAVANA.addCommand({pattern: 'dis ?(.*)', fromMe: true, desc: DDO,dontAddCMDList: true }, (async (message, match) => {    
+Asena.addCommand({pattern: 'dis ?(.*)', fromMe: true, desc: DDO,dontAddCMDList: true }, (async (message, match) => {    
 
         if (match[1] == '') {
             await message.client.toggleDisappearingMessages(message.jid, 604800);
@@ -32,7 +30,7 @@ RAVANA.addCommand({pattern: 'dis ?(.*)', fromMe: true, desc: DDO,dontAddCMDList:
 }));
 
 
-RAVANA.addCommand({pattern: 'adis ?(.*)', fromMe: true, desc: DDO,dontAddCMDList: true }, (async (message, match) => {   
+Asena.addCommand({pattern: 'adis ?(.*)', fromMe: true, desc: DDO,dontAddCMDList: true }, (async (message, match) => {   
 
         if (match[1] == '') {
             await message.client.toggleDisappearingMessages(message.jid, 0);
