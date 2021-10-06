@@ -516,6 +516,14 @@
             "MUSİC": "Music:",
             "M_AUT": "Music Author:"
         },
+        "twitter": {
+            "TWITTER_DESC": "Download twitter video.",
+            "PINTEREST_DESC": "Download pinterest photo and video",
+            "MEDIAFIRE_DESC": "Download from mediafire.",
+            "SIZE": "I can't download, Size is {}",
+            "NEED_REPLY": "*Give me a url.*",
+            "NOT_FOUND": "*Not found!*"
+        },
         "lyrics": {
             "LY_DESC": "Finds the lyrics of the song.",
             "NEED": "```You Must Write Any Song!```",
