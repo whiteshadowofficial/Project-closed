@@ -60,7 +60,7 @@ module.exports = {
     PROMOTEMSG: process.env.PROMOTE_MESSAGE === undefined ? 'default' : process.env.PROMOTE_MESSAGE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;#/]' : process.env.HANDLERS,
     SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGD,
-    SONGU: process.env.SONGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGU,
+    SONGU: process.env.SONGU === undefined ? '*📩 𝑫𝒂𝒕𝒂 𝑰𝒏 𝑷𝒓𝒐𝒄𝒆𝒔𝒔, 𝑷𝒍𝒆𝒂𝒔𝒆 𝑾𝒂𝒊𝒕 𝑨 𝑴𝒊𝒏𝒖𝒕𝒆*' : process.env.SONGU,
     DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
     PLKS: process.env.THERI_LIST === undefined ? false : process.env.THERI_LIST,
     ALL: process.env.ALL_CAPTION === undefined ? '*Copyright © 2021 | Queen Stefanie*' : process.env.ALL_CAPTION,
