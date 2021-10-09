@@ -20,7 +20,7 @@ r_text[10] = "👧";
 r_text[11] = "👸";
 r_text[12] = "🧝‍♀️";
 r_text[13] = "🥰";
-r_text[14] = "🤖";
+r_text[14] = "▢";
 r_text[15] = "👍";
 
 var i = Math.floor(16*Math.random())
