@@ -228,7 +228,14 @@
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
-            "SYSD_DESC": "Shows the system properties."
+            "SYSD_DESC": "Shows the system properties.",
+            "WARN_MSG": "```User   : {}\nWarn   : {}\nRemain : {}\nReason : {}\n\n```",
+            "WARN_DESC": "Warn replied or mentioned user in a group.",
+            "RESET": "```WARN RESET\nUser      : @{}\nRemaining : {}```",
+            "NEED_USER": "*Give me a User*",
+            "IAADMIN": "*I am not admin*",
+            "ISADMIN": "*Given user is a admin*",
+            "WARNING": "```⚠️WARNING⚠️\nUser      : @{}\nReason    : {}\nRemaining : {}```"
         },
         "tagall": {
             "TAGALL_DESC": "Tags everyone in the group.",
