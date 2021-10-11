@@ -1,6 +1,8 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
+/* # Exclusively from VIRUS FUCKER Project 
+# Do not use this fore any commercial thing
+# Do not edit (Respect to the Devaoloper) 
+# All rights reserved VIRUS FUCKER https://Wa.me/94778686868
+# Credit : usufusta-whatsappAsena
 */
 
 const Asena = require('../events');
