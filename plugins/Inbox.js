@@ -1,7 +1,8 @@
-/* Copyright (C) 2021 TENUX-Neotro.
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-NEOTROX - TEENUHX
+/* # Exclusively from VIRUS FUCKER Project 
+# Do not use this fore any commercial thing
+# Do not edit (Respect to the Devaoloper) 
+# All rights reserved VIRUS FUCKER https://Wa.me/9476777777
+# Credit : usufusta-whatsappAsena
 */
 
 const Asena = require('../events');
