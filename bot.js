@@ -1,9 +1,11 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/*STEFANIE BOT
 
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
+මේක STEFANIE BOTගේ
 
-WhatsAsena - Yusuf Usta
+උස්සන එක්කෙනාට හොදක් වෙන්න එපා
+
+Credit-VIRUS FUCKER
+
 */
 
 const fs = require("fs");
