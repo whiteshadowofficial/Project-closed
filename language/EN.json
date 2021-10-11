@@ -576,6 +576,10 @@
             "BUL": "Founded Song:",
             "ARAT": "Searched Song:"
         },
+        "qrgenerator": {
+            "TEXT": "You must enter text!",
+            "QR_DESC": "Converts the given text into a qr code image."
+        },
         "amazone": {
             "APK": "GET mod app link.",
             "ANIM_DESC": "```Send Random Anime Wallpapers!```",
