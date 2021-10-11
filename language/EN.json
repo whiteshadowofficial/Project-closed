@@ -505,6 +505,24 @@
             "HIDDEN": "Hidden",
             "NOT_FOUND": "*Media Not Found!*"
         },
+        "webss": {
+            "SS_DESC": "Takes a screenshot from the page in the given link.",
+            "LİNK": "You must enter link!",
+            "ASTRO_DESC": "Gives the astronomical weather data of the given lattitude and longitude.\n You can use .weather to find the coordinates if you donno them",
+            "LAT": "You must enter the lattitude and longitude data ,seperated by *;* in order!",
+            "USAGEI": ".astro 37.62;116.84",
+            "GLAT": "You must enter the main text and sub text seperated by *;* in order!",
+            "GLITCH_DESC": "will give you a glitch image of the text provided",
+            "NG_DESC": "will give you a Neon glow image of the text provided",
+            "WO_DESC": "will give you a wood carved image of the text provided",
+            "CC_DESC": "will put the text you provided in the foam within a coffee cup",
+            "NGLAT": "You must enter some text !",
+            "MAP_DESC": "Gives you the map of the place you entered!",
+            "EBIT_DESC":"```Converts the text into an 8bit like image```",
+            "SHA_DESC":"```Converts the text into shadow themed image```",
+            "HP_DESC":"```Converts the text into a harrypotter themed image```"
+
+        },
         "github": {
             "GİTHUB_DESC": "Collects github information from the given username.\n⌨️ Example: .github phaticusthiccy",
             "REPLY": "```You Need To Type Any Username!```",
