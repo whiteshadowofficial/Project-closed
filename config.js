@@ -62,6 +62,8 @@ module.exports = {
     SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGD,
     SONGU: process.env.SONGU === undefined ? '*📩 𝑫𝒂𝒕𝒂 𝑰𝒏 𝑷𝒓𝒐𝒄𝒆𝒔𝒔, 𝑷𝒍𝒆𝒂𝒔𝒆 𝑾𝒂𝒊𝒕 𝑨 𝑴𝒊𝒏𝒖𝒕𝒆*' : process.env.SONGU,
     DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
+    MENU_EGS: process.env.MENU_EGS === undefined ? '📝' : process.env.MENU_EGS,
+    MENU_TEG: process.env.MENU_TEG === undefined ? '🎯' : process.env.MENU_TEG,
     PLKS: process.env.THERI_LIST === undefined ? false : process.env.THERI_LIST,
     ALL: process.env.ALL_CAPTION === undefined ? '*Copyright © 2021 | Queen Stefanie*' : process.env.ALL_CAPTION,
     BGMFILTER: process.env.BGM_FILTER === undefined ? true : convertToBool(process.env.BGM_FILTER),
