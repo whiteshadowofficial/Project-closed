@@ -44,59 +44,18 @@ Asena.addCommand({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, don
         await message.client.sendMessage(message.jid,Lang.DELETED, MessageType.text)
     }
 }));
-    
-if (Config.GEAR == 'one') {  
-    
 Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         if(Config.BGMFILTER){
-            var uri = encodeURI(match[1])
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
-        if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./media/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
-        }
-        if (!!message.mention && message.mention[0] == Config.MENTION) {
-await message.client.sendMessage(message.jid, fs.readFileSync('./media/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
-        }
-        
-const array = ['alive']
-array.map( async (a) => {
-let pattern = new RegExp(`\\b${a}\\b`, 'g');
-if(pattern.test(message.message)){
-       await message.client.sendMessage(message.jid, fs.readFileSync('./media/uploads/' + a + '.mp3'), MessageType.audio, {contextInfo: { forwardingScore: 2, isForwarded: true }, mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true})
-}
-});
-    }
-
-    var filtreler = await FilterDb.getFilter(message.jid);
-    if (!filtreler) return; 
-    filtreler.map(
-        async (filter) => {
-            pattern = new RegExp(filter.dataValues.regex ? filter.dataValues.pattern : ('\\b(' + filter.dataValues.pattern + ')\\b'), 'gm');
-            if (pattern.test(message.message)) {
-                await message.client.sendMessage(message.jid,filter.dataValues.text, MessageType.text, {quoted: message.data});
-            }
-        }
-    );
-}));
-}
-    if (Config.GEAR == 'two') {    
-    Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {   
-        if(Config.BGMFILTER){
-        let banned = jid.find( Jid => Jid === message.jid);
-        if(banned !== undefined) return
-        if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 5, isForwarded: true }, quoted : message.data, ptt: true})
-        }
-        if (!!message.mention && message.mention[0] == Config.MENTION) {
+        if (!!message.mention && message.mention[0] == '918136831431@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
-        var uri = encodeURI(match[1])
-const array = ['help']
+const array = ['help','alive']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
-       await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/' + a + '.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 10, isForwarded: true },quoted: message.data, ptt: true})
+       await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/' + a + '.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true})
 }
 });
     }
@@ -112,7 +71,6 @@ if(pattern.test(message.message)){
         }
     );
 }));
-}
 Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if(Config.STICKERP){
     let banned = jid.find( Jid => Jid === message.jid);
