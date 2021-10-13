@@ -1,7 +1,7 @@
 {
   "name": "Alpha_V1",
-  "version": "1.3.2",
-  "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+  "version": "7.3.6",
+  "description": ".",
   "main": "./Alpha_V1/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
@@ -15,19 +15,19 @@
     "bot",
     "ai",
     "asena",
-    "WhatsAsena"
+    "whatsasena"
   ],
-  "author": "AsenaDev / Yusuf Usta",
-  "developer": "AsenaDev / @phaticusthiccy",
+  "author": "Alexa",
+  "developer": "@terror-boy / @HatzuHole",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
+    "url": "https://github.com/jesonpro/ales/issues"
   },
   "homepage": "https://github.com/xmain12/Alpha_V1#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.5.2",
     "@lh2020/speedtest-net": "^2.1.1",
-    "textmaker-thiccy": "^1.2.1",
+    "textmaker-thiccy": "1.2.1",
     "browser-id3-writer": "^4.4.0",
     "playstore-scraper": "^1.0.0",
     "axios": "^0.21.1",
