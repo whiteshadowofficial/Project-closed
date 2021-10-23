@@ -5,7 +5,7 @@ Stefanie Is a Open Source Project.
 So We Dont encryption this Repo..
 
 *©️ DO NOT USE OUR API'S*
-[![To heroku deploy](<div align="center">
+<div align="center">
 
   <img src="https://telegra.ph/file/713e74c1a7ec2948e06c3.jpg" width="50" height="50">
 
