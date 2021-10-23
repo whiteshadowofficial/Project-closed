@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: /.github/stefanie/beta/bot/Dockerfile
+      worker: /.github/workflows/virus/fucker/stefanie/bot/beta/release/Stefanie/Dockerfile
 run:
    worker: npm start
