@@ -9,5 +9,5 @@ So We Dont encryption this Repo..
 
   <img src="https://telegra.ph/file/713e74c1a7ec2948e06c3.jpg" width="50" height="50">
 
-  <h1>  (https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xmain12/Stefanie-V-9.2-beta)  </h1>
+  (https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xmain12/Stefanie-V-9.2-beta)  
 
