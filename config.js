@@ -1,9 +1,8 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
+/* # Exclusively from VIRUS FUCKER Project 
+# Do not use this fore any commercial thing
+# Do not edit (Respect to the Devaoloper) 
+# All rights reserved VIRUS FUCKER https://Wa.me/94779528221
+# Credit : usufusta-whatsappAsena
 */
 
 const { Sequelize } = require('sequelize');
@@ -61,6 +60,8 @@ module.exports = {
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;#/]' : process.env.HANDLERS,
     SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGD,
     SONGU: process.env.SONGU === undefined ? '*📩 𝑫𝒂𝒕𝒂 𝑰𝒏 𝑷𝒓𝒐𝒄𝒆𝒔𝒔, 𝑷𝒍𝒆𝒂𝒔𝒆 𝑾𝒂𝒊𝒕 𝑨 𝑴𝒊𝒏𝒖𝒕𝒆*' : process.env.SONGU,
+    VIDGD: process.env.VIDGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴠɪᴅᴇᴏ' : process.env.VIDGD,
+    VIDGU: process.env.VIDGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ᴠɪᴅᴇᴏ' : process.env.VIDGU,
     DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
     MENU_EGS: process.env.MENU_EGS === undefined ? '📝' : process.env.MENU_EGS,
     MENU_TEG: process.env.MENU_TEG === undefined ? '🎯' : process.env.MENU_TEG,
