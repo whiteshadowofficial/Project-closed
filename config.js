@@ -28,6 +28,8 @@ module.exports = {
     OWNER_NAME: process.env.OWNER_NAME === undefined ? 'Kaweesha Chamod' : process.env.OWNER_NAME,
     OWNER_NUMBER: process.env.OWNER_NUMBER === undefined ? '94779529221' : process.env.OWNER_NUMBER,
     MENU_HEDER: process.env.MENU_HEDER === undefined ? '▢ ⇓Stefanie Commands⇓ ▢' : process.env.MENU_HEDER,
+    RASHI: process.env.LOGO_LINK === undefined ? 'https://i.ibb.co/9rrnJ7g/20210815-080839.jpg' : process.env.LOGO_LINK,
+    BOTPLK: process.env.BOT_NAME === undefined ? 'Queen stefanie' : process.env.BOT_NAME,
     BOT_NAME: process.env.BOT_NAME === undefined ? '👸 Stefanie 👸' : process.env.BOT_NAME,
     INBOX_BLOCK: process.env.INBOX_BLOCK === undefined ?'false' : process.env.INBOX_BLOCK,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://telegra.ph/file/0edc0f3917fde20a7990a.jpg' : process.env.ALIVE_LOGO,
