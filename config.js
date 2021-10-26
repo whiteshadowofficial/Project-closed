@@ -27,6 +27,8 @@ module.exports = {
     CAPTION_KEY: process.env.CP === undefined ? '*Copyright © 2021 | Queen Stefanie*' : process.env.CP,
     OWNER_NAME: process.env.OWNER_NAME === undefined ? 'Kaweesha Chamod' : process.env.OWNER_NAME,
     OWNER_NUMBER: process.env.OWNER_NUMBER === undefined ? '94779529221' : process.env.OWNER_NUMBER,
+    Z_NUMBER: process.env.NUMBER === undefined ? '+94779529221' : process.env.NUMBER,
+    Z_OWNER: process.env.OWNER_NAME === undefined ? 'VIRUS FUCKER' : process.env.OWNER_NAME,
     MENU_HEDER: process.env.MENU_HEDER === undefined ? '▢ ⇓Stefanie Commands⇓ ▢' : process.env.MENU_HEDER,
     RASHI: process.env.LOGO_LINK === undefined ? 'https://i.ibb.co/9rrnJ7g/20210815-080839.jpg' : process.env.LOGO_LINK,
     BOTPLK: process.env.BOT_NAME === undefined ? 'Queen stefanie' : process.env.BOT_NAME,
