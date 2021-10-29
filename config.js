@@ -76,6 +76,8 @@ module.exports = {
     PANEL_COMMAND: process.env.PANEL_COMMAND === undefined ? 'help' : process.env.PANEL_COMMAND,
     BUG_COMMAND: process.env.BUG_COMMAND === undefined ? 'bug' : process.env.BUG_COMMAND,
     TIME_ZONE: process.env.TIME_ZONE === undefined ? 'Asia/Colombo' : process.env.TIME_ZONE,
+    COUNTRY_CODE: process.env.COUNTRY_CODE === undefined ? '91/94' : process.env.COUNTRY_CODE,
+    FAKE_BAN: process.env.FAKE_BAN === undefined ? 'true' : process.env.FAKE_BAN,
     HTTPS: process.env.HTTPS === undefined ? 'https://' : process.env.HTTPS,
     SUP_HEROKU: process.env.SUP_HEROKU === undefined ? 'herokuapp.com/' : process.env.SUP_HEROKU,
     HLOCK: process.env.HLOCK === undefined ? 'zeks.me.' : process.env.HLOCK,
