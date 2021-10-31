@@ -21,7 +21,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         STICKER_off = 'STICKER option turned off'
         P_dsc = 'turn on & off anti-badword To remove members when they use bad words'        
     }
-    if (config.LANG == 'ML') {
+    if (config.LANG == 'AZ') {
         l_dsc = 'bgm ഓണാക്കുക അല്ലെങ്കിൽ ഓഫ് ചെയ്യുക. -ബോട്ട് ഉടമ കമാൻഡ്'
         Y_dsc = 'bgm ഓണാക്കുക അല്ലെങ്കിൽ ഓഫ് ചെയ്യുക. -ബോട്ട് ഉടമ കമാൻഡ്'        
         BGM_on = 'bgm ഓപ്ഷൻ ഓണാക്കി'
@@ -48,7 +48,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         }
     }));
 
-    Stefanie.addCommand({pattern: 'autosticker ?(.*)', fromMe: true, desc: Y_dsc, usage: '.sticker on / off' }, (async (message, match) => {
+    Stefanie.addCommand({pattern: 'autosticker ?(.*)', fromMe: true, desc: Y_dsc, usage: '.autosticker on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
