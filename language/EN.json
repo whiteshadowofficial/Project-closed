@@ -552,6 +552,7 @@
             "ACCOUNT": "Account privacy",
             "PUBLIC": "Public",
             "HIDDEN": "Hidden",
+            "PROPIC": "🖼 Profile Pic",
             "NOT_FOUND": "*Media Not Found!*"
         },
         "webss": {
