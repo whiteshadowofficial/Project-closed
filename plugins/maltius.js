@@ -111,7 +111,7 @@ Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: "Download conten
 
 
 
-Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: Lang.FBDESC }, async (message, match) => {
+Asena.addCommand({ pattern: 'mmfb ?(.*)', fromMe: false, desc: Lang.FBDESC }, async (message, match) => {
 
     const userName = match[1]
 
