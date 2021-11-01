@@ -1,11 +1,11 @@
-/* 
-Heroku plugin for WhatsAsena - W4RR10R
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-WhatsAsena - Yusuf Usta
+/* # Exclusively from VIRUS FUCKER Project 
+# Do not use this fore any commercial thing
+# Do not edit (Respect to the Devaoloper) 
+# All rights reserved VIRUS FUCKER
+# Credit : usufusta-whatsappAsena
 */
 
-const Asena = require('../events');
+const Amazone = require('../events');
 const Config = require('../config');
 const Heroku = require('heroku-client');
 const {secondsToHms} = require('./afk');
@@ -24,7 +24,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Asena.addCommand({pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
+Amazone.addCommand({pattern: 'customize ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
 
     if (match[1] == '') {
         return await message.client.sendMessage(message.jid, Lang.DEGİS_NONE, MessageType.text); 
@@ -152,13 +152,113 @@ Asena.addCommand({pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_DESC},
             } 
         });
     }
+    else if (match[1] == 'cemoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_COMMAND']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'demoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_DESCRIPTION']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'eemoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_EXAMPLE']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'wemoji' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['EMOJI_WARNING']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'bio' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['BIO']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'sudo' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['SUDO']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'minfo' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['MENU_INFO']: message.reply_message.text
+            } 
+        });
+    }
+   else if (match[1] == 'name' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['BOT_NAME']: message.reply_message.text
+            } 
+        });
+    }
+    else if (match[1] == 'captions' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['CAPTION']: message.reply_message.text
+            } 
+        });
+    }
+     else if (match[1] == 'menulogo' && message.reply_message) {
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
+        await new Promise(r => setTimeout(r, 1200));
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
+        await heroku.patch(baseURI + '/config-vars', { 
+            body: { 
+                ['MENU_LOGO']: message.reply_message.text
+            } 
+        });
+    }
     else if (!match[1] == 'unblock' || !match[1] == 'welcome' || !match[1] == 'goodbye' || !match[1] == 'add' || !match[1] == 'block' || !match[1] == 'mute' || !match[1] == 'unmute' || !match[1] == 'afk' || !match[1] == 'alive' || !match[1] == 'demote' || !match[1] == 'promote' || !match[1] == 'ban' || !match[1] == 'kickme' && message.reply_message) {
         return await message.client.sendMessage(message.jid, Lang.WR, MessageType.text);
     }
 }));
 
 
-Asena.addCommand({pattern: 'restart$', fromMe: true, desc: Lang.RESTART_DESC}, (async (message, match) => {
+Amazone.addCommand({pattern: 'restart$', fromMe: true, dontAddCommandList: true, desc: Lang.RESTART_DESC}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid,Lang.RESTART_MSG, MessageType.text);
     console.log(baseURI);
@@ -167,7 +267,7 @@ Asena.addCommand({pattern: 'restart$', fromMe: true, desc: Lang.RESTART_DESC}, (
     });
 }));
 
-Asena.addCommand({pattern: 'shutdown$', fromMe: true, desc: Lang.SHUTDOWN_DESC}, (async(message, match) => {
+Amazone.addCommand({pattern: 'shutdown$', fromMe: true, dontAddCommandList: true, desc: Lang.SHUTDOWN_DESC}, (async(message, match) => {
 
     await heroku.get(baseURI + '/formation').then(async (formation) => {
         forID = formation[0].id;
@@ -185,11 +285,9 @@ Asena.addCommand({pattern: 'shutdown$', fromMe: true, desc: Lang.SHUTDOWN_DESC},
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'dyno$', fromMe: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
+    Amazone.addCommand({pattern: 'dyno$', fromMe: true, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
-            // have encountered some issues while calling this API via heroku-client
-            // so let's do it manually
             url = "https://api.heroku.com/accounts/" + account.id + "/actions/get-quota"
             headers = {
                 "User-Agent": "Chrome/80.0.3987.149 Mobile Safari/537.36",
@@ -218,11 +316,9 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'dyno$', fromMe: false, desc: Lang.DYNO_DESC}, (async (message, match) => {
+    Amazone.addCommand({pattern: 'dyno$', fromMe: false, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
-            // have encountered some issues while calling this API via heroku-client
-            // so let's do it manually
             url = "https://api.heroku.com/accounts/" + account.id + "/actions/get-quota"
             headers = {
                 "User-Agent": "Chrome/80.0.3987.149 Mobile Safari/537.36",
@@ -250,7 +346,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
 }
 
-Asena.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
+Amazone.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
 
@@ -336,7 +432,7 @@ Asena.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC}
             });
         }
     }
-    if (match[1].match(/905511384572/i)) {
+    if (match[1].match(/94766598862/i)) {
 
         if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
             return await message.client.sendMessage(
@@ -666,7 +762,7 @@ Asena.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC}
 }));
 
 
-Asena.addCommand({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC}, (async (message, match) => {
+Amazone.addCommand({pattern: 'delvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DELVAR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
@@ -688,7 +784,7 @@ Asena.addCommand({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC}
 
 }));
 
-Asena.addCommand({pattern: 'getvar ?(.*)', fromMe: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
+Amazone.addCommand({pattern: 'getvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
