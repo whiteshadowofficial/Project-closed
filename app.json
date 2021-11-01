@@ -239,6 +239,21 @@
             "required": false,
             "value": "Asia/Colombo"
         },
+        "EMOJI_COMMAND": {
+            "description": "You can change Command list emojis.)",
+            "required": true,
+            "value": "🛡️"
+        },
+        "EMOJI_DESCRIPTION": {
+            "description": "You can change command list emojis.)",
+            "required": true,
+            "value": "⚙️"
+        },
+        "EMOJI_WARNING": {
+            "description": "You can change command list emojis.)",
+            "required": true,
+            "value": "⚠"
+        },
         "COFFEEHOUSE_API_KEY": {
             "description": "Pass This Step! - Bu Bölümü Geçin!",
             "required": false,
