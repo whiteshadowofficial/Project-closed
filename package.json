@@ -2,7 +2,7 @@
   "name": "Alpha_V1",
   "version": "1.3.2",
   "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-  "main": "./Alpha_V1/bot.js",
+  "main": "./Stefanie-V-9.2-beta/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
