@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xmain12/Alpha_V1.git"
+    "url": "git+https://github.com/xmain12/Stefanie-V-9.2-beta.git"
   },
   "keywords": [
     "whatsapp",
@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
   },
-  "homepage": "https://github.com/SubadraBro/Alpha_V1#readme",
+  "homepage": "https://github.com/xmain12/Stefanie-V-9.2-beta#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.4.1",
     "@lh2020/speedtest-net": "^2.1.1",
