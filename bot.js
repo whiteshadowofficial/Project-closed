@@ -82,7 +82,7 @@ async function whatsAsena () {
     clh.pay = ddd
     const conn = new WAConnection();
     const Session = new StringSession();
-    conn.version = [2, 2140, 12]
+    conn.version = [2, 2119, 6]
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
@@ -95,7 +95,7 @@ async function whatsAsena () {
             }
             else if (infoaz !== '' && config.LANG == 'AZ') {
                 while (getGMTh == 19 && getGMTm == 1) { 
-                    return conn.sendMessage(conn.user.jid, '[ ```👩‍🦰දවසේ නිවේදන``` ]\n\n' + infoaz.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                    return conn.sendMessage(conn.user.jid, '[ ```Gündəlik Elanlar``` ]\n\n' + infoaz.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
             else if (infoes !== '' && config.LANG == 'ES') {
@@ -145,126 +145,126 @@ async function whatsAsena () {
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Europe/Istanbul' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('994')) { // Azerbayjan
                 var ov_time = new Date().toLocaleString('AZ', { timeZone: 'Asia/Baku' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🐺 Alpha_V1'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('94')) { // Sri Lanka
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Asia/Colombo' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n👸 Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('351')) { // Portugal
                 var ov_time = new Date().toLocaleString('PT', { timeZone: 'Europe/Lisbon' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('75')) { // Russia
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('RU', { timeZone: 'Europe/Kaliningrad' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('7')) { // Indian
                 var ov_time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('62')) { // Indonesia
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('ID', { timeZone: 'Asia/Jakarta' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('49')) { // Germany
                 var ov_time = new Date().toLocaleString('DE', { timeZone: 'Europe/Berlin' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('61')) { // Australia 
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('AU', { timeZone: 'Australia/Lord_Howe' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('55')) { // Brazil
                 var ov_time = new Date().toLocaleString('BR', { timeZone: 'America/Noronha' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('33')) { // France
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('FR', { timeZone: 'Europe/Paris' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('34')) { // Spain
                 var ov_time = new Date().toLocaleString('ES', { timeZone: 'Europe/Madrid' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('44')) { // UK
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('GB', { timeZone: 'Europe/London' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('39')) { // Italy 
                 var ov_time = new Date().toLocaleString('IT', { timeZone: 'Europe/Rome' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('7')) { // Kazakhistan
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('KZ', { timeZone: 'Asia/Almaty' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('998')) { // Uzbekistan 
                 var ov_time = new Date().toLocaleString('UZ', { timeZone: 'Asia/Samarkand' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('993')) { // Turkmenistan
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('TM', { timeZone: 'Asia/Ashgabat' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
             else {
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('EN', { timeZone: 'America/New_York' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n ' + config.BIO +' \nᴾᵒʷᵉʳᵉᵈ ᴮʸ👸Queen Stefanie'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\n👸Stefanie V 5.2 beta'
                 await conn.setStatus(biography)
             }
         }
@@ -372,7 +372,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, 'Queen Stefanie working As Public! 👩‍🦰*\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.*\n\n*Bot ක්‍රියාත්මක වන්නෙ කෙසේද හා විධාන ලැයිස්තු ලබා ගැනීමට⚜ .help විධානය භාවිතා කරන්න*\n\nSupport Group : https://chat.whatsapp.com/KXdeHCAIqXBIzMXjOJXNyn\n*👸 Queen Stefanie භාවිතා කිරීම සම්බන්ධයෙන් ස්තූතියි 💌', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*WhatsAsena Public Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:private_ *komutunu kullanın.*\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -427,7 +427,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, 'Queen Stefanie working As Private! 👩‍🦰*\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Private ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:public_ *විධානය භාවිතා කරන්න.*\n\n*Bot ක්‍රියාත්මක වන්නෙ කෙසේද හා විධාන ලැයිස්තු ලබා ගැනීමට⚜ .help විධානය භාවිතා කරන්න*\n\nSupport Group : https://chat.whatsapp.com/KXdeHCAIqXBIzMXjOJXNyn\n*👸 Queen Stefanie භාවිතා කිරීම සම්බන්ධයෙන් ස්තූතියි 💌', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*WhatsAsena Private Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:public_ *komutunu kullanın.*\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -445,7 +445,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```🛡️යාවත්කාලීන කිරීමට``` *.update now* ```යොදන්න.```\n\n' + degisiklikler + '```', MessageType.text
+                        '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
                     ); 
                 }
             }
@@ -482,7 +482,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                 await conn.sendMessage(
                     conn.user.jid,
-                    'Queen Stefanie working As Private! 👩‍🦰*\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot private ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:public_ *විධානය භාවිතා කරන්න.*\n\n*Bot ක්‍රියාත්මක වන්නෙ කෙසේද හා විධාන ලැයිස්තු ලබා ගැනීමට⚜ .help විධානය භාවිතා කරන්න*\n\nSupport Group : https://chat.whatsapp.com/KXdeHCAIqXBIzMXjOJXNyn\n*👸 Queen Stefanie භාවිතා කිරීම සම්බන්ධයෙන් ස්තූතියි 💌', MessageType.text
+                    '_Görünüşe Göre Private Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
@@ -506,7 +506,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             if (config.LANG == 'TR' || config.LANG == 'AZ') {
                 await conn.sendMessage(
                     conn.user.jid,
-                    'Queen Stefanie working As Public! 👩‍🦰*\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.*\n\n*Bot ක්‍රියාත්මක වන්නෙ කෙසේද හා විධාන ලැයිස්තු ලබා ගැනීමට⚜ .help විධානය භාවිතා කරන්න*\n\nSupport Group : https://chat.whatsapp.com/KXdeHCAIqXBIzMXjOJXNyn\n*👸 Queen Stefanie භාවිතා කිරීම සම්බන්ධයෙන් ස්තූතියි 💌Queen Stefanie working As Public! 👩‍🦰*\n\n_මෙය ඔබගේ LOG අංකයයි..මෙහි විධාන භාවිතයෙන් වළකින්න._\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතා බහක විධාන භාවිතා කිරීමට.. :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි..එය වෙනස් කිරීමට* _.setvar WORK_TYPE:private_ *විධානය භාවිතා කරන්න.*\n\n*Bot ක්‍රියාත්මක වන්නෙ කෙසේද හා විධාන ලැයිස්තු ලබා ගැනීමට⚜ .help විධානය භාවිතා කරන්න*\n\nSupport Group : https://chat.whatsapp.com/KXdeHCAIqXBIzMXjOJXNyn\n*👸 Queen Stefanie භාවිතා කිරීම සම්බන්ධයෙන් ස්තූතියි 💌', MessageType.text
+                    '_Görünüşe Göre Public Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
@@ -664,13 +664,13 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                             if (config.NOLOG == 'true') return;
 
                             if (config.LANG == 'TR' || config.LANG == 'AZ') {
-                                await conn.sendMessage(conn.user.jid, '*-- බොට් වාර්තාව [🛡️Queen-Stefanie] --*' + 
-                                    '\n*👩‍🦰Queen Stefanie නිසි ලෙස ක්‍රියා කරයි!*'+
-                                    '\n_මෙය ඔබගේ LOG අංකයයි! _මෙහි විධාන භාවිතයෙන් වළකින්න!_' +
-                                    '\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතාබහක විධාන භාවිතා කරන්න._' +
-                                    '\n_වැඩි දුර උදව් සදහා සහය සමූහයට එකතු වෙන්න._' +
-                                    '\n_සහය සමූහ: https://chat.whatsapp.com/KlpSnFrspoaEu2kRrjx8v4_\n\n' +
-                                    '*🚫ප්‍රධාන දෝෂය:* ```' + error + '```\n\n'
+                                await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [WHATSASENA] --*' + 
+                                    '\n*WhatsAsena bir hata gerçekleşti!*'+
+                                    '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
+                                    '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
+                                    '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._' +
+                                    '\n_Hatayı https://chat.whatsapp.com/BPNzFEBUVbT1MnfNv3uTvL bu gruba iletebilirsiniz._\n\n' +
+                                    '*Gerçekleşen Hata:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false});
 
                                 if (error.message.includes('URL')) {
