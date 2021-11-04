@@ -1,11 +1,3 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
-*/
-
 const Asena = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
@@ -558,7 +550,7 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
-    Asena.addCommand({ pattern: 'github ?(.*)', fromMe: true, desc: Glang.G襤THUB_DESC }, async (message, match) => {
+    /*Asena.addCommand({ pattern: 'github ?(.*)', fromMe: true, desc: Glang.G襤THUB_DESC }, async (message, match) => {
 
         const userName = match[1]
  
@@ -601,7 +593,7 @@ if (config.WORKTYPE == 'private') {
             async (err) => await message.client.sendMessage(message.jid, Glang.NOT, MessageType.text),
           )
       },
-    )
+    )*/
 
     Asena.addCommand({pattern: 'lyric ?(.*)', fromMe: true, desc: Slang.LY_DESC }, (async (message, match) => { 
 
@@ -1022,7 +1014,7 @@ else if (config.WORKTYPE == 'public') {
         });
     }));
 
-    Asena.addCommand({ pattern: 'github ?(.*)', fromMe: false, desc: Glang.G襤THUB_DESC }, async (message, match) => {
+    /*Asena.addCommand({ pattern: 'github ?(.*)', fromMe: false, desc: Glang.G襤THUB_DESC }, async (message, match) => {
 
         const userName = match[1]
  
@@ -1065,7 +1057,7 @@ else if (config.WORKTYPE == 'public') {
             async (err) => await message.client.sendMessage(message.jid, Glang.NOT, MessageType.text),
           )
       },
-    )
+    )*/
 
     Asena.addCommand({pattern: 'lyric ?(.*)', fromMe: false, desc: Slang.LY_DESC }, (async (message, match) => {
 
@@ -1220,7 +1212,7 @@ else if (config.WORKTYPE == 'public') {
             try{
                 const respo = await got("https://coronavirus-19-api.herokuapp.com/countries/Kazakhstan").then(async ok  => {
                     resp = JSON.parse(ok.body);
-                    await message.reply(`�� *Datas for Kazakhstan:*\n� *Total Cases:* ${resp.cases}\n� *Daily Cases:* ${resp.todayCases}\n�堆� *Total Deaths:* ${resp.deaths}\n�� *Daily Deaths:* ${resp.todayDeaths}\n�� *Total Recovered:* ${resp.recovered}\n� *Active Cases:* ${resp.active}\n�� *Critical Cases:* ${resp.critical}\n�妒 *Total Test:* ${resp.totalTests}`);
+                    await message.reply(`*Datas for Kazakhstan:*\n� *Total Cases:* ${resp.cases}\n� *Daily Cases:* ${resp.todayCases}\n�堆� *Total Deaths:* ${resp.deaths}\n�� *Daily Deaths:* ${resp.todayDeaths}\n�� *Total Recovered:* ${resp.recovered}\n� *Active Cases:* ${resp.active}\n�� *Critical Cases:* ${resp.critical}\n�妒 *Total Test:* ${resp.totalTests}`);
 
                 });
 
