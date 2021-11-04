@@ -1,6 +1,6 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/xmain12/Stefanie-V-9.2-beta /root/WhatsAsenaDuplicated
+RUN git clone https://github.com/Kaweeshachamodk/STEFANIE-BETA-V-8.5 /root/WhatsAsenaDuplicated
 WORKDIR /root/WhatsAsenaDuplicated/
 ENV TZ=Asia/Kolkata
 RUN npm install supervisor -g
