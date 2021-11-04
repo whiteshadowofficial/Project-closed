@@ -7,7 +7,7 @@ So We Dont encryption this Repo..
 *©️ DO NOT USE OUR API'S*
 <div align="center">
 
-heroku.com/deploy?template=https://github.com/xmain12/Stefanie-V-9.2-beta```
+```heroku.com/deploy?template=https://github.com/xmain12/Stefanie-V-9.2-beta´´´
 
 
 
