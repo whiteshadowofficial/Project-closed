@@ -23,7 +23,7 @@ const Lang = Language.getString('updater');
 
 // ==================START====================
                                                                                                                                                                                                                                                                                               
-const AmazoneDB = config.DATABASE.define('Amazone', {                     
+const AmazoneDB = config.DATABASE_URL.define('Amazone', {                     
     info: {
       type: DataTypes.STRING,
       allowNull: false
