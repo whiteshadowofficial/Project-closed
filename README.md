@@ -134,7 +134,7 @@ From the first device you need to install Stefanie Bot.`
 
 > [Sinhala Youtube Tutorial](https://youtu.be/sEtocRRzTno)
 
-> [![Sinhala Youtube Tutorial](https://telegra.ph/file/c32d74b7afc8ffe2e7fef.png)](https://youtu.be/sEtocRRzTno)
+> [![Sinhala Youtube Tutorial](https://telegra.ph/file/c32d74b7afc8ffe2e7fef.png)(https://youtu.be/GNSARiAUfKA)
 
 ## 🚀Here is the Stefanie‍ bot features
 
