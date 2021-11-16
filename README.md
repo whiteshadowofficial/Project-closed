@@ -155,7 +155,7 @@ Click WA logo to Join Support Group 👇
 
        
 
-  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Kaweeshachamodk&repo=STEFANIE-V5.2-BETA&theme=nightowl)](https://github.com/Kaweeshachamodk/STEFANIE-V5.2-BETA)
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Kaweeshachamodk&repo=STEFANIE-V5.2-BETA&theme=nightowl)](https://github.com/Kaweeshachamodk/STEFANIE-BETA-V-8.5)
 
   </div>
 
