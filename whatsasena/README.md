@@ -1,4 +1,4 @@
-## Plugins are not shown here. if you want konw plugins contact me 
+## Owner is not shown here. if you want konw plugins contact me 
 
 <p align="center">
   <a href="https://github.com/Kaweeshachamodk">
