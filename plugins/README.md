@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/Kaweeshachamodk">
-    <img src="https://img.shields.io/static/v1?label=Github&message=Aqua-Snake&color=aqua&style=plastic">
+    <img src="https://img.shields.io/static/v1?label=Github&message=Virus Fucker&color=aqua&style=plastic">
 
   </a>
     <a href="https://t.me/Aqua_Snake">
