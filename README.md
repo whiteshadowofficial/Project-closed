@@ -67,7 +67,7 @@
   
   </a>
   <a href="https://github.com/Kaweeshachamodk/STEFANIE-V5.2-BETA/fork">
-    <img src="https://img.shields.io/github/forks/xneon2/Hashzi-X?label=Fork&style=social">
+    <img src="https://img.shields.io/github/forks/Kaweeshachamodk/STEFANIE-BETA-V-8.5X?label=Fork&style=social">
     
   </a>
   <a href="https://github.com/Kaweeshachamodk/STEFANIE-V5.2-BETA/stargazers">
