@@ -77,7 +77,7 @@
 
 <p align="center">
   <a href="httsp://gi">
-    <img src="https://img.shields.io/github/repo-size/phaticusthiccy/WhatsAsenaDuplicated?color=purple&label=Repo%20Boyutu&style=plastic">
+    <img src="https://img.shields.io/github/repo-size/Kaweeshachamodk/STEFANIE-BETA-V-8.5?color=purple&label=Repo%20Boyutu&style=plastic">
 
   </a>
   <a href="https://github.com/phaticusthiccy/WhatsAsenaDuplicated/blob/master/LICENSE">
