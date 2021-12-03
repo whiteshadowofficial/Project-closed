@@ -1,7 +1,7 @@
 
-## STEFANIE-BETA-V-8.5
+## STEFANIE-BETA-V-9.5
 
-![Github Visitors](https://visitor-badge.glitch.me/badge?page_id=Kaweeshachamodk/STEFANIE-BETA-V-8.5&left_color=blueviolet&right_color=brightgreen)
+![Github Visitors](https://visitor-badge.glitch.me/badge?page_id=Kaweeshachamodk/STEFANIE-BETA-V-9.5.5&left_color=blueviolet&right_color=brightgreen)
 
 
 <p>
@@ -112,7 +112,7 @@
 
 >+ pkg install nodejs
 
->+ git clone https://github.com/Kaweeshachamodk/STEFANIE-BETA-V-8.5
+>+ git clone https://github.com/Kaweeshachamodk/STEFANIE-BETA-V-9.5
 
 >+ cd Stefanie
 
@@ -129,7 +129,7 @@ You will only generate a QR code with the first device.
 From the first device you need to install Stefanie Bot.`
 
 #### You can easily get the QR code Repl.it .. Click the button below
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kaweeshachamodk/STEFANIE-BETA-V-8.5)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kaweeshachamodk/STEFANIE-BETA-V-9.5)
 
 
 > [Sinhala Youtube Tutorial](https://youtu.be/sEtocRRzTno)
