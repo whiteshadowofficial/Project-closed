@@ -1,4 +1,4 @@
-FROM fusuf/whatsasena:latest
+FROM quay.io/lyfe00011/bot:beta
 
 RUN git clone https://github.com/whiteshadowofficial/Fidha-Mwol-v2 /root/WhatsAsenaDuplicated
 WORKDIR /root/WhatsAsenaDuplicated/
