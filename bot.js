@@ -13,14 +13,14 @@ const chalk = require('chalk');
 const config = require('./config');
 const simpleGit = require('simple-git');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./julie/');
+const {Message, StringSession, Image, Video} = require('./assets/Docs/Detabase/');
 const { DataTypes } = require('sequelize');
-const { getMessage } = require("./plugins/sql/greetings");
+const { getMessage } = require("./assets/Docs/plugins/sql/greetings");
 const git = simpleGit();
 const axios = require('axios');
 const got = require('got');
 
-const Language = require('./language');
+const Language = require('./assets/Docs/plugins/sql/language');
 const Lang = Language.getString('updater');
 
 // Sql
@@ -35,13 +35,13 @@ const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {
     }
 });
 
-fs.readdirSync('./plugins/sql/').forEach(plugin => {
+fs.readdirSync('./assets/Docs/plugins/sql/').forEach(plugin => {
     if(path.extname(plugin).toLowerCase() == '.js') {
-        require('./plugins/sql/' + plugin);
+        require('./assets/Docs/plugins/sql/' + plugin);
     }
 });
 
-const plugindb = require('./plugins/sql/plugin');
+const plugindb = require('./assets/Docs/plugins/sql/plugin');
 
 // Yalnızca bir kolaylık. https://stackoverflow.com/questions/4974238/javascript-equivalent-of-pythons-format-function //
 String.prototype.format = function () {
